@@ -17,4 +17,4 @@
   - [Commit types](/en-us/fundamentals/commit-types)
 - **Links**
 - [Changelog](/en-us/changelog)
-- [![Github](https://icongram.jgog.in/simple/github.svg?color=808080&size=16)Github](https://github.com/ymind/semantic-gitlog)
+- [![Github](https://icongram.jgog.in/simple/github.svg?color=808080&size=16)Github](https://github.com/semantic-gitlog/semantic-gitlog)

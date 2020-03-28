@@ -38,7 +38,7 @@
     }
   ],
   "defaultLang": "en",
-  "commitUrl": "https://github.com/ymind/maven-semantic-gitlog/commit/21093e4aa4fed0f85b9552278fd86cde8f117ce2",
+  "commitUrl": "https://github.com/semantic-gitlog/maven-semantic-gitlog/commit/21093e4aa4fed0f85b9552278fd86cde8f117ce2",
   "commitType": "fix",
   "commitPackage": null,
   "commitScope": "mojo",
@@ -92,7 +92,7 @@
   "repo": "username/project",
   "id": 123,
   "action": "Close",
-  "url": "https://github.com/ymind/semantic-commit/issues/123"
+  "url": "https://github.com/semantic-gitlog/semantic-commit/issues/123"
 }
 ```
 ### **MentionRef**

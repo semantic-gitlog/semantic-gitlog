@@ -1,14 +1,16 @@
 {
   "nextVersion" : {
-    "major" : 0,
-    "minor" : 6,
-    "patch" : 0,
-    "preReleaseParts" : [ "SNAPSHOT" ],
-    "buildMetaDataParts" : [ ],
-    "preRelease" : "SNAPSHOT",
-    "buildMetaData" : "",
-    "initialDevelopment" : true,
-    "stable" : false
+    "major": 0,
+    "minor": 5,
+    "patch": 10,
+    "preReleaseParts": [
+      "SNAPSHOT"
+    ],
+    "buildMetaDataParts": [],
+    "preRelease": "SNAPSHOT",
+    "buildMetaData": "",
+    "initialDevelopment": true,
+    "stable": false
   },
   "lastVersion" : {
     "major" : 0,
@@ -21,80 +23,617 @@
     "initialDevelopment" : true,
     "stable" : true
   },
-  "tags" : [ {
-    "version" : {
-      "major" : 0,
-      "minor" : 5,
-      "patch" : 0,
-      "preReleaseParts" : [ ],
-      "buildMetaDataParts" : [ ],
-      "preRelease" : "",
-      "buildMetaData" : "",
-      "initialDevelopment" : true,
-      "stable" : true
+  "tags" : [
+    {
+      "version": null,
+      "releaseDate": null,
+      "sections": [
+        {
+          "title": "Documentation",
+          "commits": [
+            {
+              "hashFull": "ba6f1f5fa767d4c289d2b3ad20eb08bd8857849e",
+              "hash": "ba6f1f5fa767d4c",
+              "hash7": "ba6f1f5",
+              "hash8": "ba6f1f5f",
+              "commitTime": "2020-08-01 14:48:12.000 +0800",
+              "commitTimeLong": 1596264492,
+              "message": "docs(docs): update docs\n\n------------\n# Locales\n- **[zh-cn]** 更新说明文档\n",
+              "merge": false,
+              "authorIdent": {
+                "when": "2020-03-28 20:41:28.000 +0800",
+                "name": "ymind",
+                "email": "ymind@yi.team"
+              },
+              "committerIdent": {
+                "when": "2020-08-01 14:48:12.000 +0800",
+                "name": "ymind",
+                "email": "ymind@yi.team"
+              },
+              "quickActions": {},
+              "closeIssues": [],
+              "subjectIssues": [],
+              "bodyIssues": [],
+              "mentions": [],
+              "locales": [
+                {
+                  "commitHash": "ba6f1f5fa767d4c289d2b3ad20eb08bd8857849e",
+                  "lang": "zh-cn",
+                  "commitType": null,
+                  "commitScope": null,
+                  "subject": "更新说明文档"
+                }
+              ],
+              "defaultLang": "en",
+              "commitUrl": "https://github.com/semantic-gitlog/semantic-gitlog/commit/ba6f1f5fa767d4c289d2b3ad20eb08bd8857849e",
+              "commitType": "docs",
+              "commitPackage": null,
+              "commitScope": "docs",
+              "commitSubject": "update docs",
+              "commitBody": null,
+              "attention": false,
+              "breakingChange": false,
+              "deprecated": false,
+              "firstLocaleCommitType": null,
+              "firstLocaleCommitScope": null,
+              "rawCommitScope": "docs",
+              "rawCommitSubject": "update docs",
+              "localeMap": {
+                "zh-cn": {
+                  "commitHash": "ba6f1f5fa767d4c289d2b3ad20eb08bd8857849e",
+                  "lang": "zh-cn",
+                  "commitType": null,
+                  "commitScope": null,
+                  "subject": "更新说明文档"
+                }
+              },
+              "rawCommitType": "docs",
+              "commitIssue": null,
+              "messageBody": "------------\n# Locales\n- **[zh-cn]** 更新说明文档",
+              "messageTitle": "docs(docs): update docs"
+            }
+          ]
+        },
+        {
+          "title": "Styles",
+          "commits": [
+            {
+              "hashFull": "c26cb3f54fc5f9a694533bddf0177a8b6b2f1cdc",
+              "hash": "c26cb3f54fc5f9a",
+              "hash7": "c26cb3f",
+              "hash8": "c26cb3f5",
+              "commitTime": "2020-08-01 14:49:28.000 +0800",
+              "commitTimeLong": 1596264568,
+              "message": "style(editorconfig): update .editorconfig, disable .mustache file indent\n",
+              "merge": false,
+              "authorIdent": {
+                "when": "2020-08-01 14:49:28.000 +0800",
+                "name": "ymind",
+                "email": "ymind@yi.team"
+              },
+              "committerIdent": {
+                "when": "2020-08-01 14:49:28.000 +0800",
+                "name": "ymind",
+                "email": "ymind@yi.team"
+              },
+              "quickActions": {},
+              "closeIssues": [],
+              "subjectIssues": [],
+              "bodyIssues": [],
+              "mentions": [],
+              "locales": [],
+              "defaultLang": "en",
+              "commitUrl": "https://github.com/semantic-gitlog/semantic-gitlog/commit/c26cb3f54fc5f9a694533bddf0177a8b6b2f1cdc",
+              "commitType": "style",
+              "commitPackage": null,
+              "commitScope": "editorconfig",
+              "commitSubject": "update .editorconfig, disable .mustache file indent",
+              "commitBody": null,
+              "attention": false,
+              "breakingChange": false,
+              "deprecated": false,
+              "firstLocaleCommitType": null,
+              "firstLocaleCommitScope": null,
+              "rawCommitScope": "editorconfig",
+              "rawCommitSubject": "update .editorconfig, disable .mustache file indent",
+              "localeMap": null,
+              "rawCommitType": "style",
+              "commitIssue": null,
+              "messageBody": "",
+              "messageTitle": "style(editorconfig): update .editorconfig, disable .mustache file indent"
+            }
+          ]
+        },
+        {
+          "title": "Build System",
+          "commits": [
+            {
+              "hashFull": "324e42a460959baae89b7d7b15351634106d4105",
+              "hash": "324e42a460959ba",
+              "hash7": "324e42a",
+              "hash8": "324e42a4",
+              "commitTime": "2020-08-01 10:13:57.000 +0800",
+              "commitTimeLong": 1596248037,
+              "message": "build(deps): bump io.freefair.lombok from 4.1.6 to 5.1.0\n\nBumps io.freefair.lombok from 4.1.6 to 5.1.0.\n\nSigned-off-by: dependabot-preview[bot] <support@dependabot.com>",
+              "merge": false,
+              "authorIdent": {
+                "when": "2020-05-18 14:16:25.000 +0800",
+                "name": "dependabot-preview[bot]",
+                "email": "27856297+dependabot-preview[bot]@users.noreply.github.com"
+              },
+              "committerIdent": {
+                "when": "2020-08-01 10:13:57.000 +0800",
+                "name": "ymind",
+                "email": "ymind@qq.com"
+              },
+              "quickActions": {},
+              "closeIssues": [],
+              "subjectIssues": [],
+              "bodyIssues": [],
+              "mentions": [],
+              "locales": [],
+              "defaultLang": "en",
+              "commitUrl": "https://github.com/semantic-gitlog/semantic-gitlog/commit/324e42a460959baae89b7d7b15351634106d4105",
+              "commitType": "build",
+              "commitPackage": null,
+              "commitScope": "deps",
+              "commitSubject": "bump io.freefair.lombok from 4.1.6 to 5.1.0",
+              "commitBody": "Bumps io.freefair.lombok from 4.1.6 to 5.1.0.\n\nSigned-off-by: dependabot-preview[bot] <support@dependabot.com>",
+              "attention": false,
+              "breakingChange": false,
+              "deprecated": false,
+              "firstLocaleCommitType": null,
+              "firstLocaleCommitScope": null,
+              "rawCommitScope": "deps",
+              "rawCommitSubject": "bump io.freefair.lombok from 4.1.6 to 5.1.0",
+              "localeMap": null,
+              "rawCommitType": "build",
+              "commitIssue": null,
+              "messageBody": "Bumps io.freefair.lombok from 4.1.6 to 5.1.0.\n\nSigned-off-by: dependabot-preview[bot] <support@dependabot.com>",
+              "messageTitle": "build(deps): bump io.freefair.lombok from 4.1.6 to 5.1.0"
+            },
+            {
+              "hashFull": "e4fbe583dadf3dfeb12c8ad841317eb19fea23c4",
+              "hash": "e4fbe583dadf3df",
+              "hash7": "e4fbe58",
+              "hash8": "e4fbe583",
+              "commitTime": "2020-08-01 10:14:39.000 +0800",
+              "commitTimeLong": 1596248079,
+              "message": "build(deps): bump team.yi.semantic-gitlog from 0.4.1.1 to 0.5.3\n\nBumps team.yi.semantic-gitlog from 0.4.1.1 to 0.5.3.\n\nSigned-off-by: dependabot-preview[bot] <support@dependabot.com>",
+              "merge": false,
+              "authorIdent": {
+                "when": "2020-05-18 14:16:46.000 +0800",
+                "name": "dependabot-preview[bot]",
+                "email": "27856297+dependabot-preview[bot]@users.noreply.github.com"
+              },
+              "committerIdent": {
+                "when": "2020-08-01 10:14:39.000 +0800",
+                "name": "ymind",
+                "email": "ymind@qq.com"
+              },
+              "quickActions": {},
+              "closeIssues": [],
+              "subjectIssues": [],
+              "bodyIssues": [],
+              "mentions": [],
+              "locales": [],
+              "defaultLang": "en",
+              "commitUrl": "https://github.com/semantic-gitlog/semantic-gitlog/commit/e4fbe583dadf3dfeb12c8ad841317eb19fea23c4",
+              "commitType": "build",
+              "commitPackage": null,
+              "commitScope": "deps",
+              "commitSubject": "bump team.yi.semantic-gitlog from 0.4.1.1 to 0.5.3",
+              "commitBody": "Bumps team.yi.semantic-gitlog from 0.4.1.1 to 0.5.3.\n\nSigned-off-by: dependabot-preview[bot] <support@dependabot.com>",
+              "attention": false,
+              "breakingChange": false,
+              "deprecated": false,
+              "firstLocaleCommitType": null,
+              "firstLocaleCommitScope": null,
+              "rawCommitScope": "deps",
+              "rawCommitSubject": "bump team.yi.semantic-gitlog from 0.4.1.1 to 0.5.3",
+              "localeMap": null,
+              "rawCommitType": "build",
+              "commitIssue": null,
+              "messageBody": "Bumps team.yi.semantic-gitlog from 0.4.1.1 to 0.5.3.\n\nSigned-off-by: dependabot-preview[bot] <support@dependabot.com>",
+              "messageTitle": "build(deps): bump team.yi.semantic-gitlog from 0.4.1.1 to 0.5.3"
+            },
+            {
+              "hashFull": "2870fd122b746f64aa056787fb3028d2956faa66",
+              "hash": "2870fd122b746f6",
+              "hash7": "2870fd1",
+              "hash8": "2870fd12",
+              "commitTime": "2020-08-01 10:15:43.000 +0800",
+              "commitTimeLong": 1596248143,
+              "message": "build(deps): bump junit-jupiter from 5.6.1 to 5.6.2\n\nBumps [junit-jupiter](https://github.com/junit-team/junit5) from 5.6.1 to 5.6.2.\n- [Release notes](https://github.com/junit-team/junit5/releases)\n- [Commits](https://github.com/junit-team/junit5/compare/r5.6.1...r5.6.2)\n\nSigned-off-by: dependabot-preview[bot] <support@dependabot.com>",
+              "merge": false,
+              "authorIdent": {
+                "when": "2020-05-18 14:17:30.000 +0800",
+                "name": "dependabot-preview[bot]",
+                "email": "27856297+dependabot-preview[bot]@users.noreply.github.com"
+              },
+              "committerIdent": {
+                "when": "2020-08-01 10:15:43.000 +0800",
+                "name": "ymind",
+                "email": "ymind@qq.com"
+              },
+              "quickActions": {},
+              "closeIssues": [],
+              "subjectIssues": [],
+              "bodyIssues": [],
+              "mentions": [],
+              "locales": [],
+              "defaultLang": "en",
+              "commitUrl": "https://github.com/semantic-gitlog/semantic-gitlog/commit/2870fd122b746f64aa056787fb3028d2956faa66",
+              "commitType": "build",
+              "commitPackage": null,
+              "commitScope": "deps",
+              "commitSubject": "bump junit-jupiter from 5.6.1 to 5.6.2",
+              "commitBody": "Bumps [junit-jupiter](https://github.com/junit-team/junit5) from 5.6.1 to 5.6.2.\n- [Release notes](https://github.com/junit-team/junit5/releases)\n- [Commits](https://github.com/junit-team/junit5/compare/r5.6.1...r5.6.2)\n\nSigned-off-by: dependabot-preview[bot] <support@dependabot.com>",
+              "attention": false,
+              "breakingChange": false,
+              "deprecated": false,
+              "firstLocaleCommitType": null,
+              "firstLocaleCommitScope": null,
+              "rawCommitScope": "deps",
+              "rawCommitSubject": "bump junit-jupiter from 5.6.1 to 5.6.2",
+              "localeMap": null,
+              "rawCommitType": "build",
+              "commitIssue": null,
+              "messageBody": "Bumps [junit-jupiter](https://github.com/junit-team/junit5) from 5.6.1 to 5.6.2.\n- [Release notes](https://github.com/junit-team/junit5/releases)\n- [Commits](https://github.com/junit-team/junit5/compare/r5.6.1...r5.6.2)\n\nSigned-off-by: dependabot-preview[bot] <support@dependabot.com>",
+              "messageTitle": "build(deps): bump junit-jupiter from 5.6.1 to 5.6.2"
+            },
+            {
+              "hashFull": "314057de80aa0f3518ea985a90fdaf3652c9f5b4",
+              "hash": "314057de80aa0f3",
+              "hash7": "314057d",
+              "hash8": "314057de",
+              "commitTime": "2020-08-01 10:16:35.000 +0800",
+              "commitTimeLong": 1596248195,
+              "message": "build(deps): bump jackson-databind from 2.10.3 to 2.11.1\n\nBumps [jackson-databind](https://github.com/FasterXML/jackson) from 2.10.3 to 2.11.1.\n- [Release notes](https://github.com/FasterXML/jackson/releases)\n- [Commits](https://github.com/FasterXML/jackson/commits)\n\nSigned-off-by: dependabot-preview[bot] <support@dependabot.com>",
+              "merge": false,
+              "authorIdent": {
+                "when": "2020-06-26 05:22:21.000 +0800",
+                "name": "dependabot-preview[bot]",
+                "email": "27856297+dependabot-preview[bot]@users.noreply.github.com"
+              },
+              "committerIdent": {
+                "when": "2020-08-01 10:16:35.000 +0800",
+                "name": "ymind",
+                "email": "ymind@qq.com"
+              },
+              "quickActions": {},
+              "closeIssues": [],
+              "subjectIssues": [],
+              "bodyIssues": [],
+              "mentions": [],
+              "locales": [],
+              "defaultLang": "en",
+              "commitUrl": "https://github.com/semantic-gitlog/semantic-gitlog/commit/314057de80aa0f3518ea985a90fdaf3652c9f5b4",
+              "commitType": "build",
+              "commitPackage": null,
+              "commitScope": "deps",
+              "commitSubject": "bump jackson-databind from 2.10.3 to 2.11.1",
+              "commitBody": "Bumps [jackson-databind](https://github.com/FasterXML/jackson) from 2.10.3 to 2.11.1.\n- [Release notes](https://github.com/FasterXML/jackson/releases)\n- [Commits](https://github.com/FasterXML/jackson/commits)\n\nSigned-off-by: dependabot-preview[bot] <support@dependabot.com>",
+              "attention": false,
+              "breakingChange": false,
+              "deprecated": false,
+              "firstLocaleCommitType": null,
+              "firstLocaleCommitScope": null,
+              "rawCommitScope": "deps",
+              "rawCommitSubject": "bump jackson-databind from 2.10.3 to 2.11.1",
+              "localeMap": null,
+              "rawCommitType": "build",
+              "commitIssue": null,
+              "messageBody": "Bumps [jackson-databind](https://github.com/FasterXML/jackson) from 2.10.3 to 2.11.1.\n- [Release notes](https://github.com/FasterXML/jackson/releases)\n- [Commits](https://github.com/FasterXML/jackson/commits)\n\nSigned-off-by: dependabot-preview[bot] <support@dependabot.com>",
+              "messageTitle": "build(deps): bump jackson-databind from 2.10.3 to 2.11.1"
+            },
+            {
+              "hashFull": "1612aed155980d5c67bae81bf1bf4df17b94c120",
+              "hash": "1612aed155980d5",
+              "hash7": "1612aed",
+              "hash8": "1612aed1",
+              "commitTime": "2020-08-01 10:16:52.000 +0800",
+              "commitTimeLong": 1596248212,
+              "message": "build(deps): bump org.eclipse.jgit\n\nBumps org.eclipse.jgit from 5.7.0.202003110725-r to 5.8.1.202007141445-r.\n\nSigned-off-by: dependabot-preview[bot] <support@dependabot.com>",
+              "merge": false,
+              "authorIdent": {
+                "when": "2020-07-17 05:23:51.000 +0800",
+                "name": "dependabot-preview[bot]",
+                "email": "27856297+dependabot-preview[bot]@users.noreply.github.com"
+              },
+              "committerIdent": {
+                "when": "2020-08-01 10:16:52.000 +0800",
+                "name": "ymind",
+                "email": "ymind@qq.com"
+              },
+              "quickActions": {},
+              "closeIssues": [],
+              "subjectIssues": [],
+              "bodyIssues": [],
+              "mentions": [],
+              "locales": [],
+              "defaultLang": "en",
+              "commitUrl": "https://github.com/semantic-gitlog/semantic-gitlog/commit/1612aed155980d5c67bae81bf1bf4df17b94c120",
+              "commitType": "build",
+              "commitPackage": null,
+              "commitScope": "deps",
+              "commitSubject": "bump org.eclipse.jgit",
+              "commitBody": "Bumps org.eclipse.jgit from 5.7.0.202003110725-r to 5.8.1.202007141445-r.\n\nSigned-off-by: dependabot-preview[bot] <support@dependabot.com>",
+              "attention": false,
+              "breakingChange": false,
+              "deprecated": false,
+              "firstLocaleCommitType": null,
+              "firstLocaleCommitScope": null,
+              "rawCommitScope": "deps",
+              "rawCommitSubject": "bump org.eclipse.jgit",
+              "localeMap": null,
+              "rawCommitType": "build",
+              "commitIssue": null,
+              "messageBody": "Bumps org.eclipse.jgit from 5.7.0.202003110725-r to 5.8.1.202007141445-r.\n\nSigned-off-by: dependabot-preview[bot] <support@dependabot.com>",
+              "messageTitle": "build(deps): bump org.eclipse.jgit"
+            },
+            {
+              "hashFull": "89b87d8eaa6cb4ddeae11cf173f13c09a440ecae",
+              "hash": "89b87d8eaa6cb4d",
+              "hash7": "89b87d8",
+              "hash8": "89b87d8e",
+              "commitTime": "2020-08-01 14:48:12.000 +0800",
+              "commitTimeLong": 1596264492,
+              "message": "build(deps): bump checkstyle from 8.30 to 8.35\n",
+              "merge": false,
+              "authorIdent": {
+                "when": "2020-08-01 12:09:25.000 +0800",
+                "name": "ymind",
+                "email": "ymind@yi.team"
+              },
+              "committerIdent": {
+                "when": "2020-08-01 14:48:12.000 +0800",
+                "name": "ymind",
+                "email": "ymind@yi.team"
+              },
+              "quickActions": {},
+              "closeIssues": [],
+              "subjectIssues": [],
+              "bodyIssues": [],
+              "mentions": [],
+              "locales": [],
+              "defaultLang": "en",
+              "commitUrl": "https://github.com/semantic-gitlog/semantic-gitlog/commit/89b87d8eaa6cb4ddeae11cf173f13c09a440ecae",
+              "commitType": "build",
+              "commitPackage": null,
+              "commitScope": "deps",
+              "commitSubject": "bump checkstyle from 8.30 to 8.35",
+              "commitBody": null,
+              "attention": false,
+              "breakingChange": false,
+              "deprecated": false,
+              "firstLocaleCommitType": null,
+              "firstLocaleCommitScope": null,
+              "rawCommitScope": "deps",
+              "rawCommitSubject": "bump checkstyle from 8.30 to 8.35",
+              "localeMap": null,
+              "rawCommitType": "build",
+              "commitIssue": null,
+              "messageBody": "",
+              "messageTitle": "build(deps): bump checkstyle from 8.30 to 8.35"
+            },
+            {
+              "hashFull": "885915b25aee1c9477bb6e4f07aee7ebea1005ea",
+              "hash": "885915b25aee1c9",
+              "hash7": "885915b",
+              "hash8": "885915b2",
+              "commitTime": "2020-08-01 14:48:12.000 +0800",
+              "commitTimeLong": 1596264492,
+              "message": "build(deps): bump pmd from 6.22.0 to 6.26.0\n",
+              "merge": false,
+              "authorIdent": {
+                "when": "2020-08-01 14:39:27.000 +0800",
+                "name": "ymind",
+                "email": "ymind@yi.team"
+              },
+              "committerIdent": {
+                "when": "2020-08-01 14:48:12.000 +0800",
+                "name": "ymind",
+                "email": "ymind@yi.team"
+              },
+              "quickActions": {},
+              "closeIssues": [],
+              "subjectIssues": [],
+              "bodyIssues": [],
+              "mentions": [],
+              "locales": [],
+              "defaultLang": "en",
+              "commitUrl": "https://github.com/semantic-gitlog/semantic-gitlog/commit/885915b25aee1c9477bb6e4f07aee7ebea1005ea",
+              "commitType": "build",
+              "commitPackage": null,
+              "commitScope": "deps",
+              "commitSubject": "bump pmd from 6.22.0 to 6.26.0",
+              "commitBody": null,
+              "attention": false,
+              "breakingChange": false,
+              "deprecated": false,
+              "firstLocaleCommitType": null,
+              "firstLocaleCommitScope": null,
+              "rawCommitScope": "deps",
+              "rawCommitSubject": "bump pmd from 6.22.0 to 6.26.0",
+              "localeMap": null,
+              "rawCommitType": "build",
+              "commitIssue": null,
+              "messageBody": "",
+              "messageTitle": "build(deps): bump pmd from 6.22.0 to 6.26.0"
+            },
+            {
+              "hashFull": "3809128097e76348b2493ba05c7f09e416a8167d",
+              "hash": "3809128097e7634",
+              "hash7": "3809128",
+              "hash8": "38091280",
+              "commitTime": "2020-08-01 14:48:12.000 +0800",
+              "commitTimeLong": 1596264492,
+              "message": "build(deps): bump semantic-commit from 0.5.0 to 0.5.7\n",
+              "merge": false,
+              "authorIdent": {
+                "when": "2020-08-01 14:43:39.000 +0800",
+                "name": "ymind",
+                "email": "ymind@yi.team"
+              },
+              "committerIdent": {
+                "when": "2020-08-01 14:48:12.000 +0800",
+                "name": "ymind",
+                "email": "ymind@yi.team"
+              },
+              "quickActions": {},
+              "closeIssues": [],
+              "subjectIssues": [],
+              "bodyIssues": [],
+              "mentions": [],
+              "locales": [],
+              "defaultLang": "en",
+              "commitUrl": "https://github.com/semantic-gitlog/semantic-gitlog/commit/3809128097e76348b2493ba05c7f09e416a8167d",
+              "commitType": "build",
+              "commitPackage": null,
+              "commitScope": "deps",
+              "commitSubject": "bump semantic-commit from 0.5.0 to 0.5.7",
+              "commitBody": null,
+              "attention": false,
+              "breakingChange": false,
+              "deprecated": false,
+              "firstLocaleCommitType": null,
+              "firstLocaleCommitScope": null,
+              "rawCommitScope": "deps",
+              "rawCommitSubject": "bump semantic-commit from 0.5.0 to 0.5.7",
+              "localeMap": null,
+              "rawCommitType": "build",
+              "commitIssue": null,
+              "messageBody": "",
+              "messageTitle": "build(deps): bump semantic-commit from 0.5.0 to 0.5.7"
+            },
+            {
+              "hashFull": "1dc621faacee2c807b0ddb3d1e06b0fec98dc167",
+              "hash": "1dc621faacee2c8",
+              "hash7": "1dc621f",
+              "hash8": "1dc621fa",
+              "commitTime": "2020-08-01 14:48:12.000 +0800",
+              "commitTimeLong": 1596264492,
+              "message": "build(deps): bump gradle-wrapper from 6.3 to 6.5.1\n",
+              "merge": false,
+              "authorIdent": {
+                "when": "2020-08-01 14:46:57.000 +0800",
+                "name": "ymind",
+                "email": "ymind@yi.team"
+              },
+              "committerIdent": {
+                "when": "2020-08-01 14:48:12.000 +0800",
+                "name": "ymind",
+                "email": "ymind@yi.team"
+              },
+              "quickActions": {},
+              "closeIssues": [],
+              "subjectIssues": [],
+              "bodyIssues": [],
+              "mentions": [],
+              "locales": [],
+              "defaultLang": "en",
+              "commitUrl": "https://github.com/semantic-gitlog/semantic-gitlog/commit/1dc621faacee2c807b0ddb3d1e06b0fec98dc167",
+              "commitType": "build",
+              "commitPackage": null,
+              "commitScope": "deps",
+              "commitSubject": "bump gradle-wrapper from 6.3 to 6.5.1",
+              "commitBody": null,
+              "attention": false,
+              "breakingChange": false,
+              "deprecated": false,
+              "firstLocaleCommitType": null,
+              "firstLocaleCommitScope": null,
+              "rawCommitScope": "deps",
+              "rawCommitSubject": "bump gradle-wrapper from 6.3 to 6.5.1",
+              "localeMap": null,
+              "rawCommitType": "build",
+              "commitIssue": null,
+              "messageBody": "",
+              "messageTitle": "build(deps): bump gradle-wrapper from 6.3 to 6.5.1"
+            }
+          ]
+        }
+      ]
     },
-    "releaseDate" : "2020-03-28 10:03:17.000 +0000",
-    "sections" : [ {
-      "title" : "Features",
-      "commits" : [ {
-        "hashFull" : "d955c57f7df0284649cfe00c4a7aea6ce0d8a17f",
-        "hash" : "d955c57f7df0284",
-        "hash7" : "d955c57",
-        "hash8" : "d955c57f",
-        "commitTime" : "2020-03-28 10:00:46.000 +0000",
-        "commitTimeLong" : 1585389646,
-        "message" : "feat(service): implement primary features and challenges\n\n------------\n# Locales\n- **[zh-cn]** 实现主要功能\n",
-        "merge" : false,
-        "authorIdent" : {
-          "when" : "2020-03-28 08:50:44.000 +0000",
-          "name" : "ymind",
-          "email" : "ymind@yi.team"
-        },
-        "committerIdent" : {
-          "when" : "2020-03-28 10:00:46.000 +0000",
-          "name" : "ymind",
-          "email" : "ymind@yi.team"
-        },
+    {
+      "version": {
+        "major": 0,
+        "minor": 5,
+        "patch": 0,
+        "preReleaseParts": [],
+        "buildMetaDataParts": [],
+        "preRelease": "",
+        "buildMetaData": "",
+        "initialDevelopment": true,
+        "stable": true
+      },
+      "releaseDate": "2020-03-28 18:13:15.000 +0800",
+      "sections": [
+        {
+          "title": "Features",
+          "commits": [
+            {
+              "hashFull": "d955c57f7df0284649cfe00c4a7aea6ce0d8a17f",
+              "hash": "d955c57f7df0284",
+              "hash7": "d955c57",
+              "hash8": "d955c57f",
+              "commitTime": "2020-03-28 18:00:46.000 +0800",
+              "commitTimeLong": 1585389646,
+              "message": "feat(service): implement primary features and challenges\n\n------------\n# Locales\n- **[zh-cn]** 实现主要功能\n",
+              "merge": false,
+              "authorIdent": {
+                "when": "2020-03-28 16:50:44.000 +0800",
+                "name": "ymind",
+                "email": "ymind@yi.team"
+              },
+              "committerIdent": {
+                "when": "2020-03-28 18:00:46.000 +0800",
+                "name": "ymind",
+                "email": "ymind@yi.team"
+              },
         "quickActions" : { },
         "closeIssues" : [ ],
         "subjectIssues" : [ ],
-        "bodyIssues" : [ ],
-        "mentions" : [ ],
-        "locales" : [ {
-          "commitHash" : "d955c57f7df0284649cfe00c4a7aea6ce0d8a17f",
-          "lang" : "zh-cn",
-          "commitType" : null,
-          "commitScope" : null,
-          "subject" : "实现主要功能"
-        } ],
-        "defaultLang" : "en",
-        "commitUrl" : "https://github.com/ymind/semantic-gitlog/commit/d955c57f7df0284649cfe00c4a7aea6ce0d8a17f",
-        "commitType" : "feat",
-        "commitPackage" : null,
-        "commitScope" : "service",
-        "commitSubject" : "implement primary features and challenges",
-        "commitBody" : null,
-        "attention" : false,
-        "breakingChange" : false,
-        "deprecated" : false,
-        "commitIssue" : null,
-        "localeMap" : {
-          "zh-cn" : {
-            "commitHash" : "d955c57f7df0284649cfe00c4a7aea6ce0d8a17f",
-            "lang" : "zh-cn",
-            "commitType" : null,
-            "commitScope" : null,
-            "subject" : "实现主要功能"
-          }
-        },
-        "firstLocaleCommitType" : null,
-        "firstLocaleCommitScope" : null,
-        "rawCommitType" : "feat",
-        "rawCommitScope" : "service",
-        "rawCommitSubject" : "implement primary features and challenges",
-        "messageTitle" : "feat(service): implement primary features and challenges",
-        "messageBody" : "------------\n# Locales\n- **[zh-cn]** 实现主要功能"
-      } ]
+              "bodyIssues": [],
+              "mentions": [],
+              "locales": [
+                {
+                  "commitHash": "d955c57f7df0284649cfe00c4a7aea6ce0d8a17f",
+                  "lang": "zh-cn",
+                  "commitType": null,
+                  "commitScope": null,
+                  "subject": "实现主要功能"
+                }
+              ],
+              "defaultLang": "en",
+              "commitUrl": "https://github.com/semantic-gitlog/semantic-gitlog/commit/d955c57f7df0284649cfe00c4a7aea6ce0d8a17f",
+              "commitType": "feat",
+              "commitPackage": null,
+              "commitScope": "service",
+              "commitSubject": "implement primary features and challenges",
+              "commitBody": null,
+              "attention": false,
+              "breakingChange": false,
+              "deprecated": false,
+              "firstLocaleCommitType": null,
+              "firstLocaleCommitScope": null,
+              "rawCommitScope": "service",
+              "rawCommitSubject": "implement primary features and challenges",
+              "localeMap": {
+                "zh-cn": {
+                  "commitHash": "d955c57f7df0284649cfe00c4a7aea6ce0d8a17f",
+                  "lang": "zh-cn",
+                  "commitType": null,
+                  "commitScope": null,
+                  "subject": "实现主要功能"
+                }
+              },
+              "rawCommitType": "feat",
+              "commitIssue": null,
+              "messageBody": "------------\n# Locales\n- **[zh-cn]** 实现主要功能",
+              "messageTitle": "feat(service): implement primary features and challenges"
+            } ]
     } ]
   } ]
 }

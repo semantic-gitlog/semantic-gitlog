@@ -17,4 +17,4 @@
   - [提交类型](/zh-cn//fundamentals/commit-types)
 - **链接**
 - [更新日志](/zh-cn/changelog)
-- [![Github](https://icongram.jgog.in/simple/github.svg?color=808080&size=16)Github](https://github.com/ymind/semantic-gitlog)
+- [![Github](https://icongram.jgog.in/simple/github.svg?color=808080&size=16)Github](https://github.com/semantic-gitlog/semantic-gitlog)

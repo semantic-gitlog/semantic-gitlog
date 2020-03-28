@@ -99,13 +99,13 @@ publishing {
             pom {
                 name = project.name
                 description = project.description
-                url = 'https://github.com/ymind/semantic-gitlog'
+                url = 'https://github.com/semantic-gitlog/semantic-gitlog'
                 inceptionYear = '2020'
 
                 scm {
-                    url = 'https://github.com/ymind/semantic-gitlog'
-                    connection = 'scm:git:git@github.com:ymind/semantic-gitlog.git'
-                    developerConnection = 'scm:git:git@github.com:ymind/semantic-gitlog.git'
+                    url = 'https://github.com/semantic-gitlog/semantic-gitlog'
+                    connection = 'scm:git:git@github.com:semantic-gitlog/semantic-gitlog.git'
+                    developerConnection = 'scm:git:git@github.com:semantic-gitlog/semantic-gitlog.git'
                 }
 
                 licenses {
@@ -133,12 +133,12 @@ publishing {
 
                 issueManagement {
                     system = 'GitHub'
-                    url = 'https://github.com/ymind/semantic-gitlog/issues'
+                    url = 'https://github.com/semantic-gitlog/semantic-gitlog/issues'
                 }
 
                 ciManagement {
-                    system = 'Travis-CI'
-                    url = 'https://travis-ci.org/ymind/semantic-gitlog'
+                    system = 'GitHub'
+                    url = 'https://github.com/semantic-gitlog/semantic-gitlog/actions'
                 }
             }
         }
@@ -203,8 +203,8 @@ changelog {
         "en"   : file("${project.rootDir}/config/gitlog/commit-scopes.md"),
         "zh-cn": file("${project.rootDir}/config/gitlog/commit-scopes.zh-cn.md")
     ]
-    issueUrlTemplate = "https://github.com/ymind/semantic-gitlog/issues/:issueId"
-    commitUrlTemplate = "https://github.com/ymind/semantic-gitlog/commit/:commitId"
+    issueUrlTemplate = "https://github.com/semantic-gitlog/semantic-gitlog/issues/:issueId"
+    commitUrlTemplate = "https://github.com/semantic-gitlog/semantic-gitlog/commit/:commitId"
     mentionUrlTemplate = "https://github.com/:username"
 }
 

@@ -1,1 +1,1 @@
-[remoteMarkdownUrl](https://raw.githubusercontent.com/ymind/semantic-gitlog/master/CHANGELOG.zh-cn.md)
+[remoteMarkdownUrl](https://raw.githubusercontent.com/semantic-gitlog/semantic-gitlog/master/CHANGELOG.zh-cn.md)

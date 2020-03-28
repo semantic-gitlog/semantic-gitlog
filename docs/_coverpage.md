@@ -6,25 +6,25 @@
 
 Automatically derive and manage version numbers and generate angular-style change logs.
 
-[![Build Status][10]][11]
-[![GitHub release (latest by date)][20]][21]
-[![Maven Central][30]][31]
-[![Semantic Versioning 2.0.0][40]][41]
-[![Conventional Commits][50]][51]
-[![GitHub][60]][61]
+[![Build Status][1010]][1011]
+[![GitHub release (latest by date)][1020]][1021]
+[![Maven Central][1030]][1031]
+[![Semantic Versioning 2.0.0][1040]][1041]
+[![Conventional Commits][1050]][1051]
+[![GitHub][1060]][1061]
 
 [Getting Started](en-us/)
-[GitHub](https://github.com/ymind/semantic-gitlog)
+[GitHub](https://github.com/semantic-gitlog/semantic-gitlog)
 
-[10]: https://travis-ci.org/ymind/semantic-gitlog.svg?branch=master
-[11]: https://travis-ci.org/ymind/semantic-gitlog
-[20]: https://img.shields.io/github/v/release/ymind/semantic-gitlog
-[21]: https://github.com/ymind/semantic-gitlog/releases
-[30]: https://img.shields.io/maven-central/v/team.yi.tools/semantic-gitlog
-[31]: https://search.maven.org/artifact/team.yi.tools/semantic-gitlog
-[40]: https://img.shields.io/badge/Semantic%20Versioning-2.0.0-brightgreen
-[41]: https://semver.org/
-[50]: https://img.shields.io/badge/Conventional%20Commits-1.0.0-yellow.svg
-[51]: https://conventionalcommits.org
-[60]: https://img.shields.io/github/license/ymind/semantic-gitlog
-[61]: https://github.com/ymind/semantic-gitlog/blob/master/LICENSE
+[1010]: https://github.com/semantic-gitlog/semantic-gitlog/workflows/semantic-gitlog/badge.svg?branch=master
+[1011]: https://github.com/semantic-gitlog/semantic-gitlog
+[1020]: https://img.shields.io/github/v/release/semantic-gitlog/semantic-gitlog
+[1021]: https://github.com/semantic-gitlog/semantic-gitlog/releases
+[1030]: https://img.shields.io/maven-central/v/team.yi.tools/semantic-gitlog
+[1031]: https://search.maven.org/artifact/team.yi.tools/semantic-gitlog
+[1040]: https://img.shields.io/badge/Semantic%20Versioning-2.0.0-brightgreen
+[1041]: https://semver.org/
+[1050]: https://img.shields.io/badge/Conventional%20Commits-1.0.0-yellow.svg
+[1051]: https://conventionalcommits.org
+[1060]: https://img.shields.io/github/license/semantic-gitlog/semantic-gitlog
+[1061]: https://github.com/semantic-gitlog/semantic-gitlog/blob/master/LICENSE
