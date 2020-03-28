@@ -10,7 +10,7 @@ plugins {
 
 group = 'team.yi.tools'
 description = 'This is a library for generating a changelog with `Conventional Commits`.'
-version = '0.4.0'
+version = '0.5.0'
 
 sourceCompatibility = JavaVersion.VERSION_1_8
 targetCompatibility = JavaVersion.VERSION_1_8
