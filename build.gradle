@@ -28,7 +28,7 @@ dependencies {
     api 'team.yi.tools:semantic-commit:0.5.0'
 
     // https://mvnrepository.com/artifact/org.eclipse.jgit/org.eclipse.jgit
-    api 'org.eclipse.jgit:org.eclipse.jgit:5.7.0.202003110725-r'
+    api 'org.eclipse.jgit:org.eclipse.jgit:5.8.1.202007141445-r'
     // https://mvnrepository.com/artifact/de.skuzzle/semantic-version
     api 'de.skuzzle:semantic-version:2.1.0'
     // https://mvnrepository.com/artifact/com.github.spullara.mustache.java/compiler
