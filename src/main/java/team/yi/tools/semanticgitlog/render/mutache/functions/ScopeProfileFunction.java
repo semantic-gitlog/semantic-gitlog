@@ -23,13 +23,14 @@ public class ScopeProfileFunction implements Function<String, String> {
 
         if (name == null) return null;
 
+        final String prop = inputParams.length > 2 ? inputParams[2] : "displayName";
         final String locale = inputParams.length > 1 ? inputParams[1] : null;
         final ScopeProfile scopeProfile = this.scopeProfileService.get(name, locale);
 
-        if (scopeProfile == null) return null;
+        if (scopeProfile == null) return "description".equals(prop) ? null : name;
 
-        final String prop = inputParams.length > 2 ? inputParams[2] : "displayName";
+        if ("description".equals(prop)) return scopeProfile.getDescription();
 
-        return "description".equals(prop) ? scopeProfile.getDescription() : scopeProfile.getDisplayName();
+        return StringUtils.defaultIfEmpty(scopeProfile.getDisplayName(), scopeProfile.getName());
     }
 }
