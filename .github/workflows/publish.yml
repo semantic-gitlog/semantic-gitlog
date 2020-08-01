@@ -38,7 +38,7 @@ jobs:
     needs: [build]
     runs-on: ubuntu-latest
 
-    if: startsWith(github.event.head_commit.message, 'bumped version to ') != true
+    if: (github.ref == 'refs/heads/master') && startsWith(github.event.head_commit.message, 'bumped version to ') != true && startsWith(github.event.head_commit.message, 'release:') != true
 
     steps:
     - uses: actions/checkout@v2
@@ -102,7 +102,7 @@ jobs:
         rm -rf ./secret.gpg
 
   deploy_release:
-    needs: [build, test]
+    needs: [build]
     runs-on: ubuntu-latest
 
     if: startsWith(github.ref, 'refs/tags/') && startsWith(github.event.head_commit.message, 'release')

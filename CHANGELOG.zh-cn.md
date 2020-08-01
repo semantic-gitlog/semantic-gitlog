@@ -1,15 +1,20 @@
 # 更新日志
 
-## 0.5.10-SNAPSHOT (2020-08-01)
+## 0.5.11 (2020-08-01)
+
+### Code Refactoring
+
+- **渲染器**: 当作用域显示名称为空时使用其名称代替 ([675a3d65](https://github.com/semantic-gitlog/semantic-gitlog/commit/675a3d653240b81e4d1b39c67b4b1253891fa094))
+
 
 ### Documentation
 
-- **文档**: 更新说明文档 ([ba6f1f5f](https://github.com/semantic-gitlog/semantic-gitlog/commit/ba6f1f5fa767d4c289d2b3ad20eb08bd8857849e))
+- **文档**: 更新说明文档 ([d09195a5](https://github.com/semantic-gitlog/semantic-gitlog/commit/d09195a5609c6aad2d8be0a7e622ad3a4e019ba0))
 
 
 ### Styles
 
-- ****: update .editorconfig, disable .mustache file indent ([c26cb3f5](https://github.com/semantic-gitlog/semantic-gitlog/commit/c26cb3f54fc5f9a694533bddf0177a8b6b2f1cdc))
+- ****: update .editorconfig, disable .mustache file indent ([50357d7c](https://github.com/semantic-gitlog/semantic-gitlog/commit/50357d7c34e03d693f944c5b9cc28134ca8c4420))
 
 
 ### Build System
@@ -23,6 +28,11 @@
 - **依赖项**: bump pmd from 6.22.0 to 6.26.0 ([885915b2](https://github.com/semantic-gitlog/semantic-gitlog/commit/885915b25aee1c9477bb6e4f07aee7ebea1005ea))
 - **依赖项**: bump semantic-commit from 0.5.0 to 0.5.7 ([38091280](https://github.com/semantic-gitlog/semantic-gitlog/commit/3809128097e76348b2493ba05c7f09e416a8167d))
 - **依赖项**: bump gradle-wrapper from 6.3 to 6.5.1 ([1dc621fa](https://github.com/semantic-gitlog/semantic-gitlog/commit/1dc621faacee2c807b0ddb3d1e06b0fec98dc167))
+
+
+### Continuous Integration
+
+- ****: add github workflows ([0d6c866b](https://github.com/semantic-gitlog/semantic-gitlog/commit/0d6c866b7c4649a7b85ec53039b462f2a1be4807))
 
 
 ## 0.5.0 (2020-03-28)

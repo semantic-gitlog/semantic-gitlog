@@ -2,51 +2,49 @@
   "nextVersion" : {
     "major": 0,
     "minor": 5,
-    "patch": 10,
-    "preReleaseParts": [
-      "SNAPSHOT"
-    ],
+    "patch": 11,
+    "preReleaseParts": [],
     "buildMetaDataParts": [],
-    "preRelease": "SNAPSHOT",
+    "preRelease": "",
     "buildMetaData": "",
     "initialDevelopment": true,
-    "stable": false
+    "stable": true
   },
   "lastVersion" : {
-    "major" : 0,
-    "minor" : 5,
-    "patch" : 0,
-    "preReleaseParts" : [ ],
-    "buildMetaDataParts" : [ ],
-    "preRelease" : "",
-    "buildMetaData" : "",
-    "initialDevelopment" : true,
-    "stable" : true
+    "major": 0,
+    "minor": 5,
+    "patch": 0,
+    "preReleaseParts": [],
+    "buildMetaDataParts": [],
+    "preRelease": "",
+    "buildMetaData": "",
+    "initialDevelopment": true,
+    "stable": true
   },
-  "tags" : [
+  "tags": [
     {
       "version": null,
       "releaseDate": null,
       "sections": [
         {
-          "title": "Documentation",
+          "title": "Code Refactoring",
           "commits": [
             {
-              "hashFull": "ba6f1f5fa767d4c289d2b3ad20eb08bd8857849e",
-              "hash": "ba6f1f5fa767d4c",
-              "hash7": "ba6f1f5",
-              "hash8": "ba6f1f5f",
-              "commitTime": "2020-08-01 14:48:12.000 +0800",
-              "commitTimeLong": 1596264492,
-              "message": "docs(docs): update docs\n\n------------\n# Locales\n- **[zh-cn]** 更新说明文档\n",
+              "hashFull": "675a3d653240b81e4d1b39c67b4b1253891fa094",
+              "hash": "675a3d653240b81",
+              "hash7": "675a3d6",
+              "hash8": "675a3d65",
+              "commitTime": "2020-08-01 15:49:33.000 +0800",
+              "commitTimeLong": 1596268173,
+              "message": "refactor(render): display scope.name when scope.displayName is empty\n\n------------\n# Locales\n- **[zh-cn]** 当作用域显示名称为空时使用其名称代替\n",
               "merge": false,
               "authorIdent": {
-                "when": "2020-03-28 20:41:28.000 +0800",
+                "when": "2020-08-01 15:49:33.000 +0800",
                 "name": "ymind",
                 "email": "ymind@yi.team"
               },
               "committerIdent": {
-                "when": "2020-08-01 14:48:12.000 +0800",
+                "when": "2020-08-01 15:49:33.000 +0800",
                 "name": "ymind",
                 "email": "ymind@yi.team"
               },
@@ -57,7 +55,73 @@
               "mentions": [],
               "locales": [
                 {
-                  "commitHash": "ba6f1f5fa767d4c289d2b3ad20eb08bd8857849e",
+                  "commitHash": "675a3d653240b81e4d1b39c67b4b1253891fa094",
+                  "lang": "zh-cn",
+                  "commitType": null,
+                  "commitScope": null,
+                  "subject": "当作用域显示名称为空时使用其名称代替"
+                }
+              ],
+              "defaultLang": "en",
+              "commitUrl": "https://github.com/semantic-gitlog/semantic-gitlog/commit/675a3d653240b81e4d1b39c67b4b1253891fa094",
+              "commitType": "refactor",
+              "commitPackage": null,
+              "commitScope": "render",
+              "commitSubject": "display scope.name when scope.displayName is empty",
+              "commitBody": null,
+              "attention": false,
+              "breakingChange": false,
+              "deprecated": false,
+              "firstLocaleCommitType": null,
+              "firstLocaleCommitScope": null,
+              "rawCommitScope": "render",
+              "rawCommitSubject": "display scope.name when scope.displayName is empty",
+              "localeMap": {
+                "zh-cn": {
+                  "commitHash": "675a3d653240b81e4d1b39c67b4b1253891fa094",
+                  "lang": "zh-cn",
+                  "commitType": null,
+                  "commitScope": null,
+                  "subject": "当作用域显示名称为空时使用其名称代替"
+                }
+              },
+              "rawCommitType": "refactor",
+              "commitIssue": null,
+              "messageBody": "------------\n# Locales\n- **[zh-cn]** 当作用域显示名称为空时使用其名称代替",
+              "messageTitle": "refactor(render): display scope.name when scope.displayName is empty"
+            }
+          ]
+        },
+        {
+          "title": "Documentation",
+          "commits": [
+            {
+              "hashFull": "d09195a5609c6aad2d8be0a7e622ad3a4e019ba0",
+              "hash": "d09195a5609c6aa",
+              "hash7": "d09195a",
+              "hash8": "d09195a5",
+              "commitTime": "2020-08-01 15:06:00.000 +0800",
+              "commitTimeLong": 1596265560,
+              "message": "docs(docs): update docs\n\n------------\n# Locales\n- **[zh-cn]** 更新说明文档\n",
+              "merge": false,
+              "authorIdent": {
+                "when": "2020-03-28 20:41:28.000 +0800",
+                "name": "ymind",
+                "email": "ymind@yi.team"
+              },
+              "committerIdent": {
+                "when": "2020-08-01 15:06:00.000 +0800",
+                "name": "ymind",
+                "email": "ymind@yi.team"
+              },
+              "quickActions": {},
+              "closeIssues": [],
+              "subjectIssues": [],
+              "bodyIssues": [],
+              "mentions": [],
+              "locales": [
+                {
+                  "commitHash": "d09195a5609c6aad2d8be0a7e622ad3a4e019ba0",
                   "lang": "zh-cn",
                   "commitType": null,
                   "commitScope": null,
@@ -65,7 +129,7 @@
                 }
               ],
               "defaultLang": "en",
-              "commitUrl": "https://github.com/semantic-gitlog/semantic-gitlog/commit/ba6f1f5fa767d4c289d2b3ad20eb08bd8857849e",
+              "commitUrl": "https://github.com/semantic-gitlog/semantic-gitlog/commit/d09195a5609c6aad2d8be0a7e622ad3a4e019ba0",
               "commitType": "docs",
               "commitPackage": null,
               "commitScope": "docs",
@@ -80,7 +144,7 @@
               "rawCommitSubject": "update docs",
               "localeMap": {
                 "zh-cn": {
-                  "commitHash": "ba6f1f5fa767d4c289d2b3ad20eb08bd8857849e",
+                  "commitHash": "d09195a5609c6aad2d8be0a7e622ad3a4e019ba0",
                   "lang": "zh-cn",
                   "commitType": null,
                   "commitScope": null,
@@ -98,12 +162,12 @@
           "title": "Styles",
           "commits": [
             {
-              "hashFull": "c26cb3f54fc5f9a694533bddf0177a8b6b2f1cdc",
-              "hash": "c26cb3f54fc5f9a",
-              "hash7": "c26cb3f",
-              "hash8": "c26cb3f5",
-              "commitTime": "2020-08-01 14:49:28.000 +0800",
-              "commitTimeLong": 1596264568,
+              "hashFull": "50357d7c34e03d693f944c5b9cc28134ca8c4420",
+              "hash": "50357d7c34e03d6",
+              "hash7": "50357d7",
+              "hash8": "50357d7c",
+              "commitTime": "2020-08-01 15:05:42.000 +0800",
+              "commitTimeLong": 1596265542,
               "message": "style(editorconfig): update .editorconfig, disable .mustache file indent\n",
               "merge": false,
               "authorIdent": {
@@ -112,7 +176,7 @@
                 "email": "ymind@yi.team"
               },
               "committerIdent": {
-                "when": "2020-08-01 14:49:28.000 +0800",
+                "when": "2020-08-01 15:05:42.000 +0800",
                 "name": "ymind",
                 "email": "ymind@yi.team"
               },
@@ -123,7 +187,7 @@
               "mentions": [],
               "locales": [],
               "defaultLang": "en",
-              "commitUrl": "https://github.com/semantic-gitlog/semantic-gitlog/commit/c26cb3f54fc5f9a694533bddf0177a8b6b2f1cdc",
+              "commitUrl": "https://github.com/semantic-gitlog/semantic-gitlog/commit/50357d7c34e03d693f944c5b9cc28134ca8c4420",
               "commitType": "style",
               "commitPackage": null,
               "commitScope": "editorconfig",
@@ -553,6 +617,56 @@
               "messageTitle": "build(deps): bump gradle-wrapper from 6.3 to 6.5.1"
             }
           ]
+        },
+        {
+          "title": "Continuous Integration",
+          "commits": [
+            {
+              "hashFull": "0d6c866b7c4649a7b85ec53039b462f2a1be4807",
+              "hash": "0d6c866b7c4649a",
+              "hash7": "0d6c866",
+              "hash8": "0d6c866b",
+              "commitTime": "2020-08-01 15:24:43.000 +0800",
+              "commitTimeLong": 1596266683,
+              "message": "ci(github): add github workflows\n",
+              "merge": false,
+              "authorIdent": {
+                "when": "2020-08-01 15:11:33.000 +0800",
+                "name": "ymind",
+                "email": "ymind@yi.team"
+              },
+              "committerIdent": {
+                "when": "2020-08-01 15:24:43.000 +0800",
+                "name": "ymind",
+                "email": "ymind@yi.team"
+              },
+              "quickActions": {},
+              "closeIssues": [],
+              "subjectIssues": [],
+              "bodyIssues": [],
+              "mentions": [],
+              "locales": [],
+              "defaultLang": "en",
+              "commitUrl": "https://github.com/semantic-gitlog/semantic-gitlog/commit/0d6c866b7c4649a7b85ec53039b462f2a1be4807",
+              "commitType": "ci",
+              "commitPackage": null,
+              "commitScope": "github",
+              "commitSubject": "add github workflows",
+              "commitBody": null,
+              "attention": false,
+              "breakingChange": false,
+              "deprecated": false,
+              "firstLocaleCommitType": null,
+              "firstLocaleCommitScope": null,
+              "rawCommitScope": "github",
+              "rawCommitSubject": "add github workflows",
+              "localeMap": null,
+              "rawCommitType": "ci",
+              "commitIssue": null,
+              "messageBody": "",
+              "messageTitle": "ci(github): add github workflows"
+            }
+          ]
         }
       ]
     },
@@ -592,9 +706,9 @@
                 "name": "ymind",
                 "email": "ymind@yi.team"
               },
-        "quickActions" : { },
-        "closeIssues" : [ ],
-        "subjectIssues" : [ ],
+              "quickActions": {},
+              "closeIssues": [],
+              "subjectIssues": [],
               "bodyIssues": [],
               "mentions": [],
               "locales": [
@@ -633,7 +747,8 @@
               "commitIssue": null,
               "messageBody": "------------\n# Locales\n- **[zh-cn]** 实现主要功能",
               "messageTitle": "feat(service): implement primary features and challenges"
-            } ]
+            }
+          ]
     } ]
   } ]
 }
