@@ -19,8 +19,7 @@ import static org.junit.jupiter.api.Assertions.assertNotNull;
 public class GitRepoTests {
     @Test
     public void gitRepoTest() throws IOException {
-        // final Path path = Paths.get(System.getProperty("user.dir"));
-        final Path path = Paths.get("E:\\GitHub\\ymind\\maven-semantic-gitlog\\src\\main");
+        final Path path = Paths.get(System.getProperty("user.dir"));
 
         final ObjectId fromId;
         final ObjectId toId;
