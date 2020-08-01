@@ -145,28 +145,30 @@ publishing {
     }
 
     repositories {
-        mavenLocal()
         maven {
-            // def releasesRepoUrl = "https://repo.114xp.cn/repository/maven-releases/"
             def releasesRepoUrl = "https://oss.sonatype.org/service/local/staging/deploy/maven2"
             def snapshotsRepoUrl = "https://oss.sonatype.org/content/repositories/snapshots"
 
             url = version.endsWith('SNAPSHOT') ? snapshotsRepoUrl : releasesRepoUrl
 
             credentials {
-                username = "${NEXUS_USERNAME}"
-                password = "${NEXUS_PASSWORD}"
+                username = System.getenv("OSSRH_USERNAME") ?: "${project.properties["OSSRH_USERNAME"]}"
+                password = System.getenv("OSSRH_TOKEN") ?: "${project.properties["OSSRH_TOKEN"]}"
             }
         }
     }
 }
 
 signing {
-    sign publishing.publications.mavenJava
+    project.ext.set("signing.keyId", System.getenv("OSSRH_GPG_SECRET_ID") ?: "${project.properties["OSSRH_GPG_SECRET_ID"]}")
+    project.ext.set("signing.secretKeyRingFile", System.getenv("OSSRH_GPG_SECRET_KEY") ?: "${project.properties["OSSRH_GPG_SECRET_KEY"]}")
+    project.ext.set("signing.password", System.getenv("OSSRH_GPG_SECRET_PASSWORD") ?: "${project.properties["OSSRH_GPG_SECRET_PASSWORD"]}")
+
+    sign(publishing.publications.getByName("mavenJava"))
 }
 
-// ./gradlew setVersion -P newVersion=2.1.3
-task setVersion {
+// ./gradlew setNewVersion -P newVersion=2.1.3
+task setNewVersion {
     println version
 
     if (project.hasProperty('newVersion')) {
@@ -180,9 +182,6 @@ task setVersion {
 
 changelog {
     toRef = "master"
-    isUnstable = true
-    preRelease = 'SNAPSHOT'
-    lastVersion = '0.4.0'
 
     jsonFile = file("${project.rootDir}/CHANGELOG.json")
     fileSets = [
@@ -206,13 +205,12 @@ changelog {
     issueUrlTemplate = "https://github.com/semantic-gitlog/semantic-gitlog/issues/:issueId"
     commitUrlTemplate = "https://github.com/semantic-gitlog/semantic-gitlog/commit/:commitId"
     mentionUrlTemplate = "https://github.com/:username"
+
+    outputs.upToDateWhen { false }
 }
 
 derive {
     toRef = "master"
-    isUnstable = true
-    preRelease = 'SNAPSHOT'
-    lastVersion = '0.4.0'
     derivedVersionMark = "NEXT_VERSION:=="
 
     commitLocales = [
@@ -223,4 +221,6 @@ derive {
         "en"   : file("${project.rootDir}/config/gitlog/commit-scopes.md"),
         "zh-cn": file("${project.rootDir}/config/gitlog/commit-scopes.zh-cn.md")
     ]
+
+    outputs.upToDateWhen { false }
 }

@@ -55,7 +55,7 @@ This is open-sourced software licensed under the [MIT license][9].
 [14]: https://github.com/semantic-gitlog/gradle-semantic-gitlog
 
 [1010]: https://github.com/semantic-gitlog/semantic-gitlog/workflows/semantic-gitlog/badge.svg?branch=master
-[1011]: https://github.com/semantic-gitlog/semantic-gitlog
+[1011]: https://github.com/semantic-gitlog/semantic-gitlog/actions
 [1020]: https://img.shields.io/github/v/release/semantic-gitlog/semantic-gitlog
 [1021]: https://github.com/semantic-gitlog/semantic-gitlog/releases
 [1030]: https://img.shields.io/maven-central/v/team.yi.tools/semantic-gitlog
