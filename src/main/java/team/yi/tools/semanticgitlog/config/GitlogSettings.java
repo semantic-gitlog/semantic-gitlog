@@ -8,11 +8,10 @@ import org.apache.commons.lang3.BooleanUtils;
 import org.apache.commons.lang3.StringUtils;
 import team.yi.tools.semanticcommit.parser.CommitParserSettings;
 import team.yi.tools.semanticgitlog.GitlogConstants;
+import team.yi.tools.semanticgitlog.VersionStrategies;
 
 import java.io.File;
-import java.util.Arrays;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 @EqualsAndHashCode(callSuper = true)
 @Data
@@ -31,6 +30,7 @@ public class GitlogSettings extends CommitParserSettings {
 
     private String untaggedName;
     private Boolean isUnstable;
+    private VersionStrategies strategy;
     private Boolean forceNextVersion;
 
     private Version lastVersion;
