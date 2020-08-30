@@ -1,5 +1,17 @@
 # 更新日志
 
+## 0.6.1 (2020-08-30)
+
+### Features
+
+- **配置**: implement option `strategy` ([0184d6a8](https://github.com/semantic-gitlog/semantic-gitlog/commit/0184d6a859bcea9765e6637f3bc40538a2966320))
+
+
+### Build System
+
+- **依赖项**: bump team.yi.semantic-gitlog from 0.5.3 to 0.5.12 ([6563d996](https://github.com/semantic-gitlog/semantic-gitlog/commit/6563d996ae1829abadd9624675b991143cbd1a12))
+
+
 ## 0.5.11 (2020-08-01)
 
 ### Code Refactoring
@@ -14,7 +26,7 @@
 
 ### Styles
 
-- ****: update .editorconfig, disable .mustache file indent ([50357d7c](https://github.com/semantic-gitlog/semantic-gitlog/commit/50357d7c34e03d693f944c5b9cc28134ca8c4420))
+- **editorconfig**: update .editorconfig, disable .mustache file indent ([50357d7c](https://github.com/semantic-gitlog/semantic-gitlog/commit/50357d7c34e03d693f944c5b9cc28134ca8c4420))
 
 
 ### Build System
@@ -32,7 +44,7 @@
 
 ### Continuous Integration
 
-- ****: add github workflows ([0d6c866b](https://github.com/semantic-gitlog/semantic-gitlog/commit/0d6c866b7c4649a7b85ec53039b462f2a1be4807))
+- **github**: add github workflows ([0d6c866b](https://github.com/semantic-gitlog/semantic-gitlog/commit/0d6c866b7c4649a7b85ec53039b462f2a1be4807))
 
 
 ## 0.5.0 (2020-03-28)

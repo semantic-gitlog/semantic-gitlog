@@ -1,5 +1,17 @@
 # Changelog
 
+## 0.6.1 (2020-08-30)
+
+### Features
+
+- **config**: implement option `strategy` ([0184d6a8](https://github.com/semantic-gitlog/semantic-gitlog/commit/0184d6a859bcea9765e6637f3bc40538a2966320))
+
+
+### Build System
+
+- **deps**: bump team.yi.semantic-gitlog from 0.5.3 to 0.5.12 ([6563d996](https://github.com/semantic-gitlog/semantic-gitlog/commit/6563d996ae1829abadd9624675b991143cbd1a12))
+
+
 ## 0.5.11 (2020-08-01)
 
 ### Code Refactoring
