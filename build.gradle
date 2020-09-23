@@ -17,7 +17,7 @@ targetCompatibility = JavaVersion.VERSION_1_8
 generateLombokConfig.enabled = false
 
 checkstyle.toolVersion = '8.36.1'
-pmd.toolVersion = '6.26.0'
+pmd.toolVersion = '6.27.0'
 
 repositories {
     mavenLocal()
