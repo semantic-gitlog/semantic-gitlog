@@ -5,7 +5,7 @@ plugins {
     id 'signing'
     id 'checkstyle'
     id 'pmd'
-    id 'team.yi.semantic-gitlog' version '0.5.12'
+    id 'team.yi.semantic-gitlog' version '0.5.13'
 }
 
 group = 'team.yi.tools'
