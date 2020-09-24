@@ -2,10 +2,7 @@ package team.yi.tools.semanticgitlog;
 
 import de.skuzzle.semantic.Version;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collections;
-import java.util.List;
+import java.util.*;
 
 public final class GitlogConstants {
     public static final Version INITIAL_VERSION = Version.create(0, 1, 0);
@@ -14,6 +11,8 @@ public final class GitlogConstants {
 
     public static final String COMMIT_ZERO = "0000000000000000000000000000000000000000";
     public static final String DEFAULT_UNTAGGED_NAME = "Unreleased";
+
+    public static final String BREAKING_CHANGE_TYPE = "BREAKING CHANGE";
 
     public static final List<String> DEFAULT_MAJOR_TYPES = new ArrayList<>();
     public static final List<String> DEFAULT_MINOR_TYPES = Collections.singletonList("feat");
