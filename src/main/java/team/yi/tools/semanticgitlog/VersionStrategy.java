@@ -1,6 +1,6 @@
 package team.yi.tools.semanticgitlog;
 
-public enum VersionStrategies {
+public enum VersionStrategy {
     strict,
     slow
 }

@@ -19,7 +19,7 @@ public class VersionDeriver {
     private final String buildMetaData;
     private final boolean forceNextVersion;
     private final boolean isUnstable;
-    private final VersionStrategies strategy;
+    private final VersionStrategy strategy;
 
     public VersionDeriver(final GitlogSettings settings) {
         this.majorTypes = settings.getMajorTypes();
@@ -31,7 +31,7 @@ public class VersionDeriver {
         this.buildMetaData = settings.getBuildMetaData();
         this.forceNextVersion = settings.getForceNextVersion();
         this.isUnstable = settings.getIsUnstable();
-        this.strategy = settings.getStrategy() == null ? VersionStrategies.strict : settings.getStrategy();
+        this.strategy = settings.getStrategy() == null ? VersionStrategy.strict : settings.getStrategy();
     }
 
     @SuppressWarnings({"PMD.NcssCount", "PMD.NPathComplexity"})
@@ -41,7 +41,7 @@ public class VersionDeriver {
             : Version.parseVersion(lastVersion.toString(), true);
 
         // in slow strategy, same type grow only once. beaking changes are grow only once too.
-        nextVersion = this.strategy == VersionStrategies.slow
+        nextVersion = this.strategy == VersionStrategy.slow
             ? deduceNextSlow(nextVersion, versionCommits)
             : deduceNextStrict(nextVersion, versionCommits);
 

@@ -8,7 +8,7 @@ import org.apache.commons.lang3.BooleanUtils;
 import org.apache.commons.lang3.StringUtils;
 import team.yi.tools.semanticcommit.parser.CommitParserSettings;
 import team.yi.tools.semanticgitlog.GitlogConstants;
-import team.yi.tools.semanticgitlog.VersionStrategies;
+import team.yi.tools.semanticgitlog.VersionStrategy;
 
 import java.io.File;
 import java.util.*;
@@ -30,7 +30,7 @@ public class GitlogSettings extends CommitParserSettings {
 
     private String untaggedName;
     private Boolean isUnstable;
-    private VersionStrategies strategy;
+    private VersionStrategy strategy;
     private Boolean forceNextVersion;
 
     private Version lastVersion;
