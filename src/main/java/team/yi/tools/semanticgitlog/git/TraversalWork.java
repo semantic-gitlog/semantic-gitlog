@@ -2,6 +2,8 @@ package team.yi.tools.semanticgitlog.git;
 
 import org.eclipse.jgit.revwalk.RevCommit;
 
+import java.util.Objects;
+
 public class TraversalWork implements Comparable<TraversalWork> {
     private final RevCommit to;
     private final String currentTagName;
@@ -43,7 +45,7 @@ public class TraversalWork implements Comparable<TraversalWork> {
             return false;
         }
 
-        return to == null ? other.to == null : to.equals(other.to);
+        return Objects.equals(to, other.to);
     }
 
     @Override

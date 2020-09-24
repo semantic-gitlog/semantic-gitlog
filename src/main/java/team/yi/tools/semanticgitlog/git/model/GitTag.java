@@ -1,8 +1,6 @@
 package team.yi.tools.semanticgitlog.git.model;
 
-import lombok.EqualsAndHashCode;
-import lombok.Getter;
-import lombok.ToString;
+import lombok.*;
 import team.yi.tools.semanticcommit.model.GitCommit;
 import team.yi.tools.semanticcommit.model.GitDate;
 
@@ -34,7 +32,7 @@ public class GitTag implements Serializable {
     }
 
     public GitCommit getCommit() {
-        if (this.gitCommits == null || this.gitCommits.isEmpty()) return null;
+        if (this.gitCommits.isEmpty()) return null;
 
         return this.gitCommits.get(0);
     }
