@@ -2,9 +2,7 @@ package team.yi.tools.semanticgitlog.model;
 
 import lombok.experimental.UtilityClass;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 import java.util.concurrent.ConcurrentHashMap;
 
 @UtilityClass
@@ -28,32 +26,32 @@ public class ReleaseSections {
     private static final String OTHERS = "Others";
 
     static {
+        TITLES.put("BREAKING_CHANGE", BREAKING_CHANGE);
+        TITLES.put("REVERTS", REVERTS);
         TITLES.put("BUG_FIXES", BUG_FIXES);
-        TITLES.put("CODE_REFACTORING", CODE_REFACTORING);
         TITLES.put("FEATURES", FEATURES);
         TITLES.put("PERFORMANCE_IMPROVEMENTS", PERFORMANCE_IMPROVEMENTS);
-        TITLES.put("DOCUMENTATION", DOCUMENTATION);
-        TITLES.put("STYLES", STYLES);
-        TITLES.put("REVERTS", REVERTS);
-        TITLES.put("BREAKING_CHANGE", BREAKING_CHANGE);
-        TITLES.put("DEPRECATIONS", DEPRECATIONS);
+        TITLES.put("CODE_REFACTORING", CODE_REFACTORING);
         TITLES.put("CHORES", CHORES);
+        TITLES.put("DEPRECATIONS", DEPRECATIONS);
         TITLES.put("TESTS", TESTS);
+        TITLES.put("STYLES", STYLES);
+        TITLES.put("DOCUMENTATION", DOCUMENTATION);
         TITLES.put("BUILD_SYSTEM", BUILD_SYSTEM);
         TITLES.put("CONTINUOUS_INTEGRATION", CONTINUOUS_INTEGRATION);
         TITLES.put("OTHERS", OTHERS);
 
+        DEFAULT_ORDER_LIST.add(BREAKING_CHANGE);
+        DEFAULT_ORDER_LIST.add(REVERTS);
         DEFAULT_ORDER_LIST.add(BUG_FIXES);
-        DEFAULT_ORDER_LIST.add(CODE_REFACTORING);
         DEFAULT_ORDER_LIST.add(FEATURES);
         DEFAULT_ORDER_LIST.add(PERFORMANCE_IMPROVEMENTS);
-        DEFAULT_ORDER_LIST.add(DOCUMENTATION);
-        DEFAULT_ORDER_LIST.add(STYLES);
-        DEFAULT_ORDER_LIST.add(REVERTS);
-        DEFAULT_ORDER_LIST.add(BREAKING_CHANGE);
-        DEFAULT_ORDER_LIST.add(DEPRECATIONS);
+        DEFAULT_ORDER_LIST.add(CODE_REFACTORING);
         DEFAULT_ORDER_LIST.add(CHORES);
+        DEFAULT_ORDER_LIST.add(DEPRECATIONS);
         DEFAULT_ORDER_LIST.add(TESTS);
+        DEFAULT_ORDER_LIST.add(STYLES);
+        DEFAULT_ORDER_LIST.add(DOCUMENTATION);
         DEFAULT_ORDER_LIST.add(BUILD_SYSTEM);
         DEFAULT_ORDER_LIST.add(CONTINUOUS_INTEGRATION);
         DEFAULT_ORDER_LIST.add(OTHERS);

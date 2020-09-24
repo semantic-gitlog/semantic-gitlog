@@ -1,9 +1,7 @@
 package team.yi.tools.semanticgitlog.model;
 
 import de.skuzzle.semantic.Version;
-import lombok.EqualsAndHashCode;
-import lombok.Getter;
-import lombok.ToString;
+import lombok.*;
 import team.yi.tools.semanticcommit.model.GitDate;
 
 import java.io.Serializable;
@@ -30,6 +28,12 @@ public class ReleaseTag implements Serializable {
     }
 
     public List<ReleaseSection> getSections() {
+        return getSections(ReleaseSections.DEFAULT_ORDER_LIST);
+    }
+
+    public List<ReleaseSection> getSections(final List<String> sortedSections) {
+        if (sortedSections == null || sortedSections.isEmpty()) throw new IllegalArgumentException("argument 'sortedSections' can not be null.");
+
         if (sections == null || sections.isEmpty()) return null;
 
         return sections.stream()
@@ -51,9 +55,8 @@ public class ReleaseTag implements Serializable {
                     return 0;
                 }
 
-                // todo make configuration
-                final int i1 = ReleaseSections.DEFAULT_ORDER_LIST.indexOf(t1);
-                final int i2 = ReleaseSections.DEFAULT_ORDER_LIST.indexOf(t2);
+                final int i1 = sortedSections.indexOf(t1);
+                final int i2 = sortedSections.indexOf(t2);
 
                 return Integer.compare(i1, i2);
             })
