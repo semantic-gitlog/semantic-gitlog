@@ -1,5 +1,36 @@
 # Changelog
 
+## 0.7.0 (2020-09-25)
+
+### Bug Fixes
+
+- bump patch when minor or major versions are bumped using `strategy=slow` #8 ([#8](https://github.com/semantic-gitlog/semantic-gitlog/issues/8)) ([950adb3b](https://github.com/semantic-gitlog/semantic-gitlog/commit/950adb3bc6b529d8ebc2a4de788cd5107b490255))
+
+
+### Code Refactoring
+
+- code optimization ([77b1b873](https://github.com/semantic-gitlog/semantic-gitlog/commit/77b1b8731cd481ec525d8c2611bd4e1f353d612b))
+- rename VersionStrategies to VersionStrategy ([85bfaee8](https://github.com/semantic-gitlog/semantic-gitlog/commit/85bfaee8efcc5e9f322b544e9fe9a04624a0a086))
+
+
+### Features
+
+- support custom release sections order ([0cfe8cb8](https://github.com/semantic-gitlog/semantic-gitlog/commit/0cfe8cb85dd59cd31b274b6a1b61063e944526d8))
+
+
+### Build System
+
+- **deps**: bump io.freefair.lombok from 5.1.0 to 5.2.1 ([38ddbb09](https://github.com/semantic-gitlog/semantic-gitlog/commit/38ddbb099fe3d8c17566982ecc732149d1a16c14))
+- **deps**: bump team.yi.semantic-gitlog from 0.5.3 to 0.5.13 ([840860f8](https://github.com/semantic-gitlog/semantic-gitlog/commit/840860f8295b84002c14ecf21b0606105579eef9))
+- **deps**: bump org.eclipse.jgit from 5.8.1.202007141445-r to 5.9.0.202009080501-r ([662f44dd](https://github.com/semantic-gitlog/semantic-gitlog/commit/662f44dd48cc330194290e3b75a3de0d3a3e9d81))
+- **deps**: bump jackson-databind from 2.11.1 to 2.11.2 ([997903f6](https://github.com/semantic-gitlog/semantic-gitlog/commit/997903f62147926a3a547b7218b3d0b0347937e2))
+- **deps**: bump junit-jupiter from 5.6.2 to 5.7.0 ([b72fa18e](https://github.com/semantic-gitlog/semantic-gitlog/commit/b72fa18e64c6c92f193f5659dc0b27ddc130136b))
+- **deps**: bump checkstyle from 8.35 to 8.36.1 ([9a6f837a](https://github.com/semantic-gitlog/semantic-gitlog/commit/9a6f837aa5c2d1b27e8bee94c3352510df1b208b))
+- **deps**: bump pmd from 6.26.0 to 6.27.0 ([08b4eb79](https://github.com/semantic-gitlog/semantic-gitlog/commit/08b4eb79b59be9fe483f067c6dd1eecace8cbc33))
+- **deps**: bump semantic-commit from 0.5.7 to 0.5.13 ([f12a7c5a](https://github.com/semantic-gitlog/semantic-gitlog/commit/f12a7c5ad0035dfcf1eaba66478056162b5a725e))
+- **gradle**: bumped gradle version from 6.5.1 to 6.6.1 ([10b5f902](https://github.com/semantic-gitlog/semantic-gitlog/commit/10b5f902120055280c4eb3e88b3611c6a06ad7ce))
+
+
 ## 0.6.1 (2020-08-30)
 
 ### Features
