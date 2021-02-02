@@ -34,6 +34,7 @@ public class GitlogSettings extends CommitParserSettings {
     private Boolean forceNextVersion;
 
     private Version lastVersion;
+    private String tagRegex;
     private String preRelease;
     private String buildMetaData;
     private String majorTypes;
@@ -53,6 +54,10 @@ public class GitlogSettings extends CommitParserSettings {
 
     public String getUntaggedName() {
         return StringUtils.defaultIfBlank(this.untaggedName, GitlogConstants.DEFAULT_UNTAGGED_NAME);
+    }
+
+    public String getTagRegex() {
+        return StringUtils.defaultIfBlank(this.tagRegex, GitlogConstants.DEFAULT_TAG_PATTERN);
     }
 
     public List<String> getMajorTypes() {

@@ -30,7 +30,7 @@ public class GitRepoTests {
 
             fromId = gitRepo.getFromId(null, null);
             toId = gitRepo.getToId(refName, null);
-            tags = gitRepo.getTags(fromId, toId, GitlogConstants.DEFAULT_UNTAGGED_NAME);
+            tags = gitRepo.getTags(fromId, toId, GitlogConstants.DEFAULT_UNTAGGED_NAME, GitlogConstants.DEFAULT_TAG_PATTERN);
         }
 
         for (final GitTag tag : tags) {

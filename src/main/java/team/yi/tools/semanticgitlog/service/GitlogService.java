@@ -46,7 +46,7 @@ public class GitlogService {
         final List<ReleaseTag> releaseTags = new ArrayList<>();
         final ObjectId fromId = this.gitRepo.getFromId(this.settings.getFromRef(), this.settings.getFromCommit());
         final ObjectId toId = this.gitRepo.getToId(this.settings.getToRef(), this.settings.getToCommit());
-        final List<GitTag> tags = this.gitRepo.getTags(fromId, toId, this.settings.getUntaggedName());
+        final List<GitTag> tags = this.gitRepo.getTags(fromId, toId, this.settings.getUntaggedName(), this.settings.getTagRegex());
         ReleaseTag releaseTag = null;
         Version lastVersion = null;
 
