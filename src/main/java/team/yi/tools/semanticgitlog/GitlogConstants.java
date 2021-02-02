@@ -20,4 +20,6 @@ public final class GitlogConstants {
     public static final List<String> DEFAULT_PRE_RELEASE_TYPES = new ArrayList<>();
     public static final List<String> DEFAULT_BUILD_META_DATA_TYPES = new ArrayList<>();
     public static final List<String> DEFAULT_HIDDEN_TYPES = Collections.singletonList("release");
+    public static final String DEFAULT_TAG_PATTERN = "^(0|[1-9]\\d*)\\.(0|[1-9]\\d*)\\.(0|[1-9]\\d*)(?:-((?:0|[1-9]\\d*|\\d*[a-zA-Z-][0-9a-zA-Z-]*)"
+        + "(?:\\.(?:0|[1-9]\\d*|\\d*[a-zA-Z-][0-9a-zA-Z-]*))*))?(?:\\+([0-9a-zA-Z-]+(?:\\.[0-9a-zA-Z-]+)*))?$";
 }

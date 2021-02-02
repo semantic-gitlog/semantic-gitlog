@@ -115,7 +115,7 @@ public final class GitRepo implements Closeable {
         return commits;
     }
 
-    public List<GitTag> getTags(final AnyObjectId fromId, final AnyObjectId toId, final String untaggedName) {
+    public List<GitTag> getTags(final AnyObjectId fromId, final AnyObjectId toId, final String untaggedName, final String tagRegex) {
         final RevCommit from = this.revWalk.lookupCommit(Objects.requireNonNull(fromId, "fromId"));
         final RevCommit to = this.revWalk.lookupCommit(Objects.requireNonNull(toId, "toId"));
 
@@ -124,7 +124,7 @@ public final class GitRepo implements Closeable {
         try {
             this.commitsToInclude = this.getDiffingCommits(from, to);
 
-            final List<Ref> tagList = this.tagsBetweenFromAndTo(from, to);
+            final List<Ref> tagList = this.tagsBetweenFromAndTo(from, to, tagRegex);
             final Map<String, Ref> tagPerCommitHash = this.getTagPerCommitHash(tagList);
             final Map<String, String> tagPerCommitsHash = new ConcurrentHashMap<>();
             final Map<String, Set<GitCommit>> commitsPerTag = new ConcurrentHashMap<>();
@@ -382,13 +382,25 @@ public final class GitRepo implements Closeable {
         return tagPerCommit;
     }
 
-    private List<Ref> tagsBetweenFromAndTo(final ObjectId from, final ObjectId to)
+    private List<Ref> tagsBetweenFromAndTo(final ObjectId from, final ObjectId to, final String tagRegex)
         throws IncorrectObjectTypeException, MissingObjectException, GitAPIException {
         final List<Ref> tagList = this.git.tagList().call();
         final List<RevCommit> icludedCommits = toList(this.git.log().addRange(from, to).call());
         final List<Ref> includedTags = new ArrayList<>();
 
-        for (final Ref tag : tagList) {
+        final List<Ref> matchingList = tagList.stream().filter(s -> {
+            String tagName = s.getName();
+            if (tagName == null) {
+                return false;
+            }
+            String tagPrefix = "refs/tags/";
+            if (tagName.startsWith(tagPrefix)) {
+                tagName = tagName.substring(tagPrefix.length());
+            }
+            return tagName.matches(tagRegex);
+        }).collect(Collectors.toList());
+
+        for (final Ref tag : matchingList) {
             final ObjectId peeledTag = getPeeled(tag);
 
             // noinspection SuspiciousMethodCalls
