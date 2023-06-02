@@ -30,7 +30,7 @@ dependencies {
     // https://mvnrepository.com/artifact/org.eclipse.jgit/org.eclipse.jgit
     api 'org.eclipse.jgit:org.eclipse.jgit:5.9.0.202009080501-r'
     // https://mvnrepository.com/artifact/de.skuzzle/semantic-version
-    api 'de.skuzzle:semantic-version:2.1.0'
+    api 'de.skuzzle:semantic-version:2.1.1'
     // https://mvnrepository.com/artifact/com.github.spullara.mustache.java/compiler
     api 'com.github.spullara.mustache.java:compiler:0.9.10'
     // https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-databind
