@@ -11,7 +11,9 @@ import team.yi.tools.semanticgitlog.GitlogConstants;
 import team.yi.tools.semanticgitlog.VersionStrategy;
 
 import java.io.File;
-import java.util.*;
+import java.util.Arrays;
+import java.util.List;
+import java.util.Map;
 
 @EqualsAndHashCode(callSuper = true)
 @Data

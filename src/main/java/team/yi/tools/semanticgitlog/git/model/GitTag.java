@@ -1,6 +1,8 @@
 package team.yi.tools.semanticgitlog.git.model;
 
-import lombok.*;
+import lombok.EqualsAndHashCode;
+import lombok.Getter;
+import lombok.ToString;
 import team.yi.tools.semanticcommit.model.GitCommit;
 import team.yi.tools.semanticcommit.model.GitDate;
 

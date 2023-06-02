@@ -2,7 +2,10 @@ package team.yi.tools.semanticgitlog;
 
 import de.skuzzle.semantic.Version;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.List;
 
 public final class GitlogConstants {
     public static final Version INITIAL_VERSION = Version.create(0, 1, 0);
@@ -21,5 +24,5 @@ public final class GitlogConstants {
     public static final List<String> DEFAULT_BUILD_META_DATA_TYPES = new ArrayList<>();
     public static final List<String> DEFAULT_HIDDEN_TYPES = Collections.singletonList("release");
     public static final String DEFAULT_TAG_PATTERN = "^(0|[1-9]\\d*)\\.(0|[1-9]\\d*)\\.(0|[1-9]\\d*)(?:-((?:0|[1-9]\\d*|\\d*[a-zA-Z-][0-9a-zA-Z-]*)"
-        + "(?:\\.(?:0|[1-9]\\d*|\\d*[a-zA-Z-][0-9a-zA-Z-]*))*))?(?:\\+([0-9a-zA-Z-]+(?:\\.[0-9a-zA-Z-]+)*))?$";
+                                                     + "(?:\\.(?:0|[1-9]\\d*|\\d*[a-zA-Z-][0-9a-zA-Z-]*))*))?(?:\\+([0-9a-zA-Z-]+(?:\\.[0-9a-zA-Z-]+)*))?$";
 }

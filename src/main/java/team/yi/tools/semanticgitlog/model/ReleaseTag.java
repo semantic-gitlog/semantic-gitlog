@@ -1,7 +1,9 @@
 package team.yi.tools.semanticgitlog.model;
 
 import de.skuzzle.semantic.Version;
-import lombok.*;
+import lombok.EqualsAndHashCode;
+import lombok.Getter;
+import lombok.ToString;
 import team.yi.tools.semanticcommit.model.GitDate;
 
 import java.io.Serializable;
