@@ -37,7 +37,7 @@ dependencies {
     api 'com.fasterxml.jackson.core:jackson-databind:2.11.2'
 
     // https://mvnrepository.com/artifact/org.junit.jupiter/junit-jupiter
-    testImplementation 'org.junit.jupiter:junit-jupiter:5.7.0'
+    testImplementation 'org.junit.jupiter:junit-jupiter:5.9.3'
 }
 
 lombok {
