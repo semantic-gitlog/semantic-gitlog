@@ -1,5 +1,22 @@
 # 更新日志
 
+## 0.8.6 (2023-06-02)
+
+### Features
+
+- make tags to be considered configurable ([8b8e791c](https://github.com/semantic-gitlog/semantic-gitlog/commit/8b8e791c0e71cd4c746be95f9d852ffa983ffc88))
+
+
+### Build System
+
+- **依赖项**: bump io.freefair.lombok from 5.2.1 to 5.3.3.3 ([2a18d21b](https://github.com/semantic-gitlog/semantic-gitlog/commit/2a18d21b1bfaf65f42378dd0fbb805552c6120f8))
+- **依赖项**: bump junit-jupiter from 5.7.0 to 5.9.3 ([339933c8](https://github.com/semantic-gitlog/semantic-gitlog/commit/339933c811abf92cec320b8383907c6725cae3b8))
+- **依赖项**: bump jackson-databind from 2.11.2 to 2.15.2 ([c8aebc8d](https://github.com/semantic-gitlog/semantic-gitlog/commit/c8aebc8d4159f85dd82c2001d81c73a7dc7548c6))
+- **依赖项**: bump mustache from 0.9.6 to 0.9.10 ([2c4c188b](https://github.com/semantic-gitlog/semantic-gitlog/commit/2c4c188bcaa683a01020b002cc1ad622f66fe4f5))
+- **依赖项**: bump semantic-version from 2.1.0 to 2.1.1 ([42d1cf8e](https://github.com/semantic-gitlog/semantic-gitlog/commit/42d1cf8e71caf11a2f0cd3f35c9f3eb5cf8c11a9))
+- **依赖项**: bump org.eclipse.jgit from 5.9.0.202009080501-r to 5.13.1.202206130422-r ([d39f7643](https://github.com/semantic-gitlog/semantic-gitlog/commit/d39f76436a8ca4a5b3e3fb4133f533e81af0176d))
+
+
 ## 0.7.0 (2020-09-25)
 
 ### Bug Fixes
@@ -7,15 +24,15 @@
 - bump patch when minor or major versions are bumped using `strategy=slow` #8 ([#8](https://github.com/semantic-gitlog/semantic-gitlog/issues/8)) ([950adb3b](https://github.com/semantic-gitlog/semantic-gitlog/commit/950adb3bc6b529d8ebc2a4de788cd5107b490255))
 
 
+### Features
+
+- support custom release sections order ([0cfe8cb8](https://github.com/semantic-gitlog/semantic-gitlog/commit/0cfe8cb85dd59cd31b274b6a1b61063e944526d8))
+
+
 ### Code Refactoring
 
 - code optimization ([77b1b873](https://github.com/semantic-gitlog/semantic-gitlog/commit/77b1b8731cd481ec525d8c2611bd4e1f353d612b))
 - rename VersionStrategies to VersionStrategy ([85bfaee8](https://github.com/semantic-gitlog/semantic-gitlog/commit/85bfaee8efcc5e9f322b544e9fe9a04624a0a086))
-
-
-### Features
-
-- support custom release sections order ([0cfe8cb8](https://github.com/semantic-gitlog/semantic-gitlog/commit/0cfe8cb85dd59cd31b274b6a1b61063e944526d8))
 
 
 ### Build System
@@ -50,14 +67,14 @@
 - **渲染器**: 当作用域显示名称为空时使用其名称代替 ([675a3d65](https://github.com/semantic-gitlog/semantic-gitlog/commit/675a3d653240b81e4d1b39c67b4b1253891fa094))
 
 
-### Documentation
-
-- **文档**: 更新说明文档 ([d09195a5](https://github.com/semantic-gitlog/semantic-gitlog/commit/d09195a5609c6aad2d8be0a7e622ad3a4e019ba0))
-
-
 ### Styles
 
 - **editorconfig**: update .editorconfig, disable .mustache file indent ([50357d7c](https://github.com/semantic-gitlog/semantic-gitlog/commit/50357d7c34e03d693f944c5b9cc28134ca8c4420))
+
+
+### Documentation
+
+- **文档**: 更新说明文档 ([d09195a5](https://github.com/semantic-gitlog/semantic-gitlog/commit/d09195a5609c6aad2d8be0a7e622ad3a4e019ba0))
 
 
 ### Build System

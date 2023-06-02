@@ -1,3 +1,5 @@
+import team.yi.tools.semanticgitlog.VersionStrategy
+
 plugins {
     id "io.freefair.lombok" version "5.3.3.3"
     id 'java-library'
@@ -5,7 +7,7 @@ plugins {
     id 'signing'
     id 'checkstyle'
     id 'pmd'
-    id 'team.yi.semantic-gitlog' version '0.5.13'
+    id 'team.yi.semantic-gitlog' version '0.5.17'
 }
 
 group = 'team.yi.tools'
@@ -182,6 +184,7 @@ task setNewVersion {
 
 changelog {
     toRef = "master"
+    strategy = VersionStrategy.strict
 
     jsonFile = file("${project.rootDir}/CHANGELOG.json")
     fileSets = [
@@ -212,6 +215,7 @@ changelog {
 derive {
     toRef = "master"
     derivedVersionMark = "NEXT_VERSION:=="
+    strategy = VersionStrategy.strict
 
     commitLocales = [
         "en"   : file("${project.rootDir}/config/gitlog/commit-locales.md"),
