@@ -32,7 +32,7 @@ dependencies {
     // https://mvnrepository.com/artifact/de.skuzzle/semantic-version
     api 'de.skuzzle:semantic-version:2.1.0'
     // https://mvnrepository.com/artifact/com.github.spullara.mustache.java/compiler
-    api 'com.github.spullara.mustache.java:compiler:0.9.6'
+    api 'com.github.spullara.mustache.java:compiler:0.9.10'
     // https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-databind
     api 'com.fasterxml.jackson.core:jackson-databind:2.15.2'
 
