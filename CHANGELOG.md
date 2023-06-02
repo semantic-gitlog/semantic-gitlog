@@ -1,10 +1,15 @@
 # Changelog
 
-## 0.8.6 (2023-06-02)
+## 0.8.8 (2023-06-02)
 
 ### Features
 
 - make tags to be considered configurable ([8b8e791c](https://github.com/semantic-gitlog/semantic-gitlog/commit/8b8e791c0e71cd4c746be95f9d852ffa983ffc88))
+
+
+### Styles
+
+- code cleanup ([c69ddb58](https://github.com/semantic-gitlog/semantic-gitlog/commit/c69ddb580ed9be2fcf3dc8bb108bc4775eb42ae3))
 
 
 ### Build System
@@ -15,6 +20,8 @@
 - **deps**: bump mustache from 0.9.6 to 0.9.10 ([2c4c188b](https://github.com/semantic-gitlog/semantic-gitlog/commit/2c4c188bcaa683a01020b002cc1ad622f66fe4f5))
 - **deps**: bump semantic-version from 2.1.0 to 2.1.1 ([42d1cf8e](https://github.com/semantic-gitlog/semantic-gitlog/commit/42d1cf8e71caf11a2f0cd3f35c9f3eb5cf8c11a9))
 - **deps**: bump org.eclipse.jgit from 5.9.0.202009080501-r to 5.13.1.202206130422-r ([d39f7643](https://github.com/semantic-gitlog/semantic-gitlog/commit/d39f76436a8ca4a5b3e3fb4133f533e81af0176d))
+- **deps**: bump team.yi.semantic-gitlog from 0.5.13 to 0.5.17 ([4131b929](https://github.com/semantic-gitlog/semantic-gitlog/commit/4131b92981f8281f8970256e5a9c786cb2342c81))
+- **deps**: bump team.yi.semantic-gitlog from 0.5.13 to 0.5.19 ([8fc1dfec](https://github.com/semantic-gitlog/semantic-gitlog/commit/8fc1dfec1651ab7e39da8c330f50bbf420c57f29))
 
 
 ## 0.7.0 (2020-09-25)
