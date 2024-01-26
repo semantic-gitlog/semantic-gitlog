@@ -1,7 +1,7 @@
 import team.yi.tools.semanticgitlog.VersionStrategy
 
 plugins {
-    id "io.freefair.lombok" version "5.3.3.3"
+    id "io.freefair.lombok" version "8.4"
     id 'java-library'
     id 'maven-publish'
     id 'signing'
@@ -14,7 +14,6 @@ version = '0.8.8'
 
 sourceCompatibility = JavaVersion.VERSION_1_8
 targetCompatibility = JavaVersion.VERSION_1_8
-generateLombokConfig.enabled = false
 
 repositories {
     mavenCentral()
@@ -37,7 +36,7 @@ dependencies {
 }
 
 lombok {
-    version = "1.18.12"
+    version = "1.18.30"
 }
 
 test {
