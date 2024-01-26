@@ -20,7 +20,8 @@ repositories {
 }
 
 dependencies {
-    api 'team.yi.tools:semantic-commit:0.5.19'
+    // https://mvnrepository.com/artifact/team.yi.tools/semantic-commit
+    api 'team.yi.tools:semantic-commit:0.5.27'
 
     // https://mvnrepository.com/artifact/org.eclipse.jgit/org.eclipse.jgit
     api 'org.eclipse.jgit:org.eclipse.jgit:6.8.0.202311291450-r'
