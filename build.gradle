@@ -6,7 +6,6 @@ plugins {
     id 'maven-publish'
     id 'signing'
     id 'checkstyle'
-    id 'pmd'
     id 'team.yi.semantic-gitlog' version '0.5.17'
 }
 
@@ -19,7 +18,6 @@ targetCompatibility = JavaVersion.VERSION_1_8
 generateLombokConfig.enabled = false
 
 checkstyle.toolVersion = '8.36.1'
-pmd.toolVersion = '6.27.0'
 
 repositories {
     mavenCentral()
@@ -58,17 +56,6 @@ tasks.withType(JavaCompile) {
 }
 
 tasks.withType(Checkstyle) {
-    ignoreFailures = false
-
-    reports {
-        xml.enabled false
-        html.enabled true
-    }
-}
-
-tasks.withType(Pmd) {
-    ruleSetFiles = files("${rootDir}/config/pmd/rulesets.xml")
-    ruleSets = []
     ignoreFailures = false
 
     reports {

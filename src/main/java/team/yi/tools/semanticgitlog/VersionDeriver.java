@@ -40,7 +40,6 @@ public class VersionDeriver {
         this.strategy = settings.getStrategy() == null ? VersionStrategy.strict : settings.getStrategy();
     }
 
-    @SuppressWarnings({"PMD.NcssCount", "PMD.NPathComplexity"})
     public Version deduceNext(final Version lastVersion, final Stack<ReleaseCommit> versionCommits) {
         Version nextVersion = lastVersion == null
             ? GitlogConstants.INITIAL_VERSION
@@ -58,7 +57,6 @@ public class VersionDeriver {
             : version;
     }
 
-    @SuppressWarnings("PMD.NcssCount")
     private Version deduceNextSlow(final Version version, final Stack<ReleaseCommit> versionCommits) {
         final List<String> versionParts = Arrays.asList("major", "minor", "patch", "preRelease", "buildMetaData");
         final Map<String, Set<String>> changeMap = new ConcurrentHashMap<>();

@@ -38,7 +38,6 @@ import java.util.TreeSet;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.stream.Collectors;
 
-@SuppressWarnings({"PMD.TooManyMethods", "PMD.GodClass"})
 @Slf4j
 public final class GitRepo implements Closeable {
     private final Repository repository;

@@ -18,7 +18,6 @@ import java.util.Map;
 @EqualsAndHashCode(callSuper = true)
 @Data
 @SuperBuilder
-@SuppressWarnings("PMD.TooManyFields")
 public class GitlogSettings extends CommitParserSettings {
     private static final long serialVersionUID = 4854964815370323001L;
 
