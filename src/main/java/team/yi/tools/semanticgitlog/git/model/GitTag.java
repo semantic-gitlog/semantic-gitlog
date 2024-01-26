@@ -38,8 +38,4 @@ public class GitTag implements Serializable {
 
         return this.gitCommits.get(0);
     }
-
-    public boolean isHasTagTime() {
-        return this.hasTagTime;
-    }
 }

@@ -12,8 +12,8 @@ group = 'team.yi.tools'
 description = 'This is a library for generating a changelog with `Conventional Commits`.'
 version = '0.8.8'
 
-sourceCompatibility = JavaVersion.VERSION_1_8
-targetCompatibility = JavaVersion.VERSION_1_8
+sourceCompatibility = JavaVersion.VERSION_11
+targetCompatibility = JavaVersion.VERSION_11
 
 repositories {
     mavenCentral()
@@ -52,6 +52,7 @@ tasks.withType(JavaCompile) {
 }
 
 java {
+    withJavadocJar()
     withSourcesJar()
 }
 
