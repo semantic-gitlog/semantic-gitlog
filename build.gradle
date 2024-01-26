@@ -5,7 +5,7 @@ plugins {
     id 'java-library'
     id 'maven-publish'
     id 'signing'
-    id 'team.yi.semantic-gitlog' version '0.5.17'
+    id 'team.yi.semantic-gitlog' version '0.6.5'
 }
 
 group = 'team.yi.tools'
