@@ -22,7 +22,6 @@ checkstyle.toolVersion = '8.36.1'
 pmd.toolVersion = '6.27.0'
 
 repositories {
-    mavenLocal()
     mavenCentral()
 }
 
@@ -79,7 +78,6 @@ tasks.withType(Pmd) {
 }
 
 java {
-    withJavadocJar()
     withSourcesJar()
 }
 
