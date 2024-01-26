@@ -1,5 +1,27 @@
 # Changelog
 
+## 0.8.20 (2024-01-26)
+
+### Chores
+
+- **deps**: remove semantic-version ([d17d841b](https://github.com/semantic-gitlog/semantic-gitlog/commit/d17d841bb1ffd0e6c88f7c7c605927c2fb10f0cf))
+- **deps**: bump org.eclipse.jgit from 5.13.1.202206130422-r to 6.8.0.202311291450-r ([6f56ed76](https://github.com/semantic-gitlog/semantic-gitlog/commit/6f56ed765e26c05988313fb8b8b6b7c828b89b4a))
+- **deps**: bump mustache from 0.9.10 to 0.9.11 ([d084690a](https://github.com/semantic-gitlog/semantic-gitlog/commit/d084690a1d1ffb615c6641da7e675685f8ba1837))
+- **deps**: bump jackson-databind from 2.15.2 to 2.16.1 ([bd5c7065](https://github.com/semantic-gitlog/semantic-gitlog/commit/bd5c70653ae140e668b9e7bfcaf8937f6db8fff8))
+- **deps**: bump junit-jupiter from 5.9.3 to 5.10.1 ([6a2a06d1](https://github.com/semantic-gitlog/semantic-gitlog/commit/6a2a06d1c9907c9d8d07fefa2d07ae9fa87b6604))
+- **deps**: bump semantic-commit from 0.5.19 to 0.5.27 ([5f48f1f2](https://github.com/semantic-gitlog/semantic-gitlog/commit/5f48f1f22486f6a87234588472755ef14d010a7e))
+
+
+### Build System
+
+- **deps**: bump io.freefair.lombok from 5.3.3.3 to 8.4 ([9c23491a](https://github.com/semantic-gitlog/semantic-gitlog/commit/9c23491af16ee637ff59f1842072f737d1458425))
+- **deps**: bump team.yi.semantic-gitlog from 0.5.17 to 0.6.5 ([0c37027e](https://github.com/semantic-gitlog/semantic-gitlog/commit/0c37027e0e5a9d9ebf3edeaaf053d2803cda4654))
+- **deps**: bump jdk from 1.8 to 11 ([1c5c4445](https://github.com/semantic-gitlog/semantic-gitlog/commit/1c5c44453c720c21013f6afc232f1eb522354d99))
+- **gradle**: bumped gradle version from 6.6.1 to 8.5 ([ed970e40](https://github.com/semantic-gitlog/semantic-gitlog/commit/ed970e401a807034f3c3e2310afbc87875bbcea2))
+- **gradle**: remove plugin `pmd` ([ce6105ea](https://github.com/semantic-gitlog/semantic-gitlog/commit/ce6105ea494097e31134382136c651a2bd02f4fc))
+- **gradle**: remove plugin `checkstyle` ([eee9be60](https://github.com/semantic-gitlog/semantic-gitlog/commit/eee9be60294e6087640259c08b88e4ba7e93ba88))
+
+
 ## 0.8.8 (2023-06-02)
 
 ### Features
@@ -9,7 +31,7 @@
 
 ### Styles
 
-- code cleanup ([c69ddb58](https://github.com/semantic-gitlog/semantic-gitlog/commit/c69ddb580ed9be2fcf3dc8bb108bc4775eb42ae3))
+- code cleanup ([c56758bf](https://github.com/semantic-gitlog/semantic-gitlog/commit/c56758bf3637ee90cc59d80f49f2481ab2dc4696))
 
 
 ### Build System
@@ -21,7 +43,7 @@
 - **deps**: bump semantic-version from 2.1.0 to 2.1.1 ([42d1cf8e](https://github.com/semantic-gitlog/semantic-gitlog/commit/42d1cf8e71caf11a2f0cd3f35c9f3eb5cf8c11a9))
 - **deps**: bump org.eclipse.jgit from 5.9.0.202009080501-r to 5.13.1.202206130422-r ([d39f7643](https://github.com/semantic-gitlog/semantic-gitlog/commit/d39f76436a8ca4a5b3e3fb4133f533e81af0176d))
 - **deps**: bump team.yi.semantic-gitlog from 0.5.13 to 0.5.17 ([4131b929](https://github.com/semantic-gitlog/semantic-gitlog/commit/4131b92981f8281f8970256e5a9c786cb2342c81))
-- **deps**: bump team.yi.semantic-gitlog from 0.5.13 to 0.5.19 ([8fc1dfec](https://github.com/semantic-gitlog/semantic-gitlog/commit/8fc1dfec1651ab7e39da8c330f50bbf420c57f29))
+- **deps**: bump semantic-commit from 0.5.13 to 0.5.19 ([000270e5](https://github.com/semantic-gitlog/semantic-gitlog/commit/000270e52d00ee18e35ccf00214553fc2fa14c7b))
 
 
 ## 0.7.0 (2020-09-25)
