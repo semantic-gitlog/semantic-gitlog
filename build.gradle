@@ -23,7 +23,7 @@ dependencies {
     api 'team.yi.tools:semantic-commit:0.5.19'
 
     // https://mvnrepository.com/artifact/org.eclipse.jgit/org.eclipse.jgit
-    api 'org.eclipse.jgit:org.eclipse.jgit:5.13.1.202206130422-r'
+    api 'org.eclipse.jgit:org.eclipse.jgit:6.8.0.202311291450-r'
     // https://mvnrepository.com/artifact/com.github.spullara.mustache.java/compiler
     api 'com.github.spullara.mustache.java:compiler:0.9.10'
     // https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-databind
