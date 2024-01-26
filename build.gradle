@@ -27,7 +27,7 @@ dependencies {
     // https://mvnrepository.com/artifact/com.github.spullara.mustache.java/compiler
     api 'com.github.spullara.mustache.java:compiler:0.9.11'
     // https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-databind
-    api 'com.fasterxml.jackson.core:jackson-databind:2.15.2'
+    api 'com.fasterxml.jackson.core:jackson-databind:2.16.1'
 
     // https://mvnrepository.com/artifact/org.junit.jupiter/junit-jupiter
     testImplementation 'org.junit.jupiter:junit-jupiter:5.9.3'
